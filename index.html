@@ -48,14 +48,20 @@
           <canvas id="glucoseTotal" height="200" width="600px"></canvas>
         </div>
       </div>
-      <div class="panel large-3 columns">
+      <div class="panel large-3 columns" id="glucose-weekly">
         <h3>Weekly Average</h3>
-        <canvas id="weeklyAverage" height="100" width="150px"></canvas>
+          <div class="barback">
+            <div class="setrange"></div>
+            <div class="target"></div>
+          </div>
       </div>
-      <div class="panel large-3 columns">
+      <div class="panel large-3 columns" id="glucose-monthly">
         <h3>Monthly Average</h3>
+          <div class="barback">
+            <div class="setrange"></div>
+            <div class="target"></div>
+          </div>
       </div>
-    </div>
     <div class="row">
       <div class="large-6 columns">
         <h2>My Messages</h2>
@@ -66,8 +72,12 @@
       <div class="large-6 columns">
         <h2>Food Log and Exercise</h2>
         <div class="row">
-          <div class="panel large-6 columns">
+          <div class="panel large-6 columns" id="carb-count">
             <h3>Total Carb Count</h3>
+              <div class="barback">
+                <div class="setrange"></div>
+                <div class="target"></div>
+              </div>
           </div>
           <div class="panel large-6 columns">
             <h3>Exercise Logged Today</h3>
