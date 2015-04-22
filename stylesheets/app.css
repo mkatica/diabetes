@@ -9166,30 +9166,30 @@ th.hide-for-touch {
 
 /* line 7, ../scss/_overrides.scss */
 .barback {
-  background-color: #ccc;
+  background-color: #5CDBD5;
   margin-top: 20px;
-  height: 20px;
+  height: 15px;
   width: 100%;
-  border-radius: 12px;
+  border-radius: 10px;
 }
 
 /* line 15, ../scss/_overrides.scss */
 .setrange {
-  background-color: #999;
+  background-color: #18A19A;
   border-radius: 12px;
-  height: 20px;
+  height: 15px;
   margin-left: 22%;
   width: 47%;
 }
 
 /* line 23, ../scss/_overrides.scss */
 .target {
-  background-color: #ff0000;
+  background-color: #EE5876;
   border-radius: 12px;
-  height: 28px;
+  height: 24px;
   margin-left: 33%;
-  margin-top: -25px;
-  width: 30px;
+  margin-top: -20px;
+  width: 24px;
   text-align: center;
 }
 
