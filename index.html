@@ -10,46 +10,51 @@
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato">
   </head>
   <body>
-    <div class="contain-to-grid"> 
-      <nav class="top-bar" data-topbar>
-        <ul class="title-area">
-          <li class="name">
-            <h1><a href="#">Diabetes Tracker</a></h1>
-          </li>
-        </ul>
-      <section class="top-bar-section">
-        <!-- Right Nav Section -->
-        <ul class="right">
-          <li><a href="#">Messages</a></li>
-          <li><a href="#">Profile</a></li>
-          <li class="has-dropdown">
-            <a href="#">My Dashboard</a>
-            <ul class="dropdown">
-              <li><a href="#">Glucose Levels</a></li>
-              <li><a href="#">Food Log</a></li>
-              <li><a href="#">Exercise</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
+    <div id="top-bar-override">
+      <div class="contain-to-grid"> 
+        <nav class="top-bar" data-topbar>
+          <ul class="title-area">
+            <li class="name">
+              <h1><a href="#">Diabetes Tracker</a></h1>
+            </li>
+          </ul>
+        <section class="top-bar-section">
+          <ul class="right">
+            <li><a href="#">Messages</a></li>
+            <li><a href="#">Profile</a></li>
+            <li class="has-dropdown">
+              <a href="#">My Dashboard</a>
+              <ul class="dropdown">
+                <li><a href="#">Glucose Levels</a></li>
+                <li><a href="#">Food Log</a></li>
+                <li><a href="#">Exercise</a></li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        </nav>
+      </div>
     </div>
     <div class="row">
       <div class="large-12 columns">
-        <h1>My Glucose Dashboard</h1>
-        <div class="panel large-9 columns padded-column">
-          <div class="button-bar">
-            <ul class="button-group radius">
-              <li><a href="#" class="tiny button radius">Week</a></li>
-              <li><a href="#" class="tiny button radius">Month</a></li>
-              <li><a href="#" class="tiny button radius">3 Months</a></li>
-            </ul>
-            <ul class="button-group radius">
-              <li><a href="#" class="tiny button radius">List</a></li>
-            </ul>
-          <canvas id="glucoseTotal" height="200" width="600px"></canvas>
+        <h1 id="top-header">My Glucose Dashboard</h1>
+        <div class="large-9 columns">
+          <div class ="panel">
+            <div class="button-bar">
+              <ul class="button-group radius">
+                <li><a href="#" class="tiny button radius">Week</a></li>
+                <li><a href="#" class="tiny button radius">Month</a></li>
+                <li><a href="#" class="tiny button radius">3 Months</a></li>
+              </ul>
+              <ul class="button-group radius">
+                <li><a href="#" class="tiny button radius">List</a></li>
+              </ul>
+            <canvas id="glucoseTotal" height="200" width="600px"></canvas>
+          </div>
         </div>
       </div>
-      <div class="panel large-3 columns" id="glucose-weekly">
+      <div class="large-3 columns" id="glucose-weekly">
+        <div class="panel">
         <h2>123</h2>
           <div class="barback">
             <div class="setrange"></div>
@@ -57,15 +62,18 @@
           </div>
           <h3>Weekly Average</h3>
           <h4>Glucose Level</h4>
+        </div>
       </div>
-      <div class="panel large-3 columns" id="glucose-monthly">
-        <h2>132</h2>
+      <div class="large-3 columns" id="glucose-monthly">
+        <div class="panel">
+          <h2>132</h2>
           <div class="barback">
             <div class="setrange"></div>
             <div class="target"></div>
           </div>
           <h3>Monthly Average</h3>
           <h4>Glucose Level</h4>
+        </div>
       </div>
     <div class="row">
       <div class="large-6 columns">
@@ -77,20 +85,23 @@
       <div class="large-6 columns">
         <h1>Food Log and Exercise</h1>
         <div class="row">
-          <div class="panel large-6 columns" id="carb-count">
-            <h2>7</h2>
-              <div class="barback">
-                <div class="setrange"></div>
-                <div class="target"></div>
-              </div>
-              <h3>Total Carb Count</h3>
-              <h4>For today</h4>
-          </div>
-          <div class="panel large-6 columns">
-            <h3>Exercise Logged Today</h3>
-            <canvas id="dailyExerciseGoal" height="150" width="150px"></canvas>
-            <h4 class="year">10<span>active minutes</span></h4>
-            <p>You have hit <b>33%</b> of your daily exercise goal of 30 minutes. <i>Synced with Fitbit</i></p>
+          <div class="large-6 columns" id="carb-count">
+            <div class="panel">
+              <h2>7</h2>
+                <div class="barback">
+                  <div class="setrange"></div>
+                  <div class="target"></div>
+                </div>
+                <h3>Total Carb Count</h3>
+                <h4>For today</h4>
+            </div>
+          </div> 
+          <div class="large-6 columns">
+            <div class="panel">
+              <canvas id="dailyExerciseGoal" height="150" width="150px"></canvas>
+              <h3>Exercise Today</h3>
+              <h4><i>Synced with Fitbit</i></h4>
+            </div>
           </div>
       </div>
     </div>
