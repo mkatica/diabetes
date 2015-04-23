@@ -9159,15 +9159,15 @@ th.hide-for-touch {
 }
 /* line 1, ../scss/_overrides.scss */
 .shell {
-  font-family: sans-serif;
   margin: 0 auto;
   width: 80%;
 }
 
-/* line 7, ../scss/_overrides.scss */
+/* line 6, ../scss/_overrides.scss */
 .barback {
   background-color: #5CDBD5;
-  margin-top: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   height: 15px;
   width: 100%;
   border-radius: 10px;
@@ -9193,10 +9193,60 @@ th.hide-for-touch {
   text-align: center;
 }
 
-/* line 33, ../scss/_overrides.scss */
-.target h5 {
-  color: #fff;
-  font-size: 1.1em;
-  font-weight: normal;
-  padding-top: 3px;
+/* line 39, ../scss/_overrides.scss */
+body {
+  background-color: #EFEDEA;
+}
+
+/* line 43, ../scss/_overrides.scss */
+nav.top-bar {
+  background-color: #18A19A;
+}
+
+/* line 47, ../scss/_overrides.scss */
+h1 {
+  font: 24px "Lato", "Helvetica", "Sans Serif";
+  color: #71655D;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+/* line 54, ../scss/_overrides.scss */
+h2 {
+  font: 72px "Lato", "Helvetica", "Sans Serif";
+  color: #71655D;
+  font-weight: 300;
+}
+
+/* line 60, ../scss/_overrides.scss */
+h2, h3, h4 {
+  text-align: center;
+}
+
+/* line 64, ../scss/_overrides.scss */
+h3 {
+  font: 20px "Lato", "Helvetica", "Sans Serif";
+  color: #71655D;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+/* line 71, ../scss/_overrides.scss */
+h4 {
+  font: 18px "Lato", "Helvetica", "Sans Serif";
+  color: #71655D;
+  font-weight: 300;
+}
+
+/* line 77, ../scss/_overrides.scss */
+.panel {
+  background-color: #FFF;
+  border-color: #A79C95;
+  border: 2px;
+  border-radius: 5px;
+}
+
+/* line 84, ../scss/_overrides.scss */
+.padded-column {
+  padding: 10px;
 }
