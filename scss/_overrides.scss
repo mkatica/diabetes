@@ -98,3 +98,27 @@ h2, h3, h4 {
 .button-bar .button-group {
   float: right;
 }
+
+.button {
+  background-color: #FFF;
+  font: .2em $main-typeface;
+  color: #71655D;
+}
+
+.button-bar .button-group{
+  border: 1px solid #71655D;
+}
+
+
+a.button hover {
+  background-color: 847870;
+}
+
+table tr th, table tr td {
+  font: $main-typeface; 
+  padding: .5rem, 1rem;
+}
+
+tr {
+  border: 1px solid #71655D;
+}

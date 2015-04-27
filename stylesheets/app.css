@@ -9267,3 +9267,31 @@ h2, h3, h4 {
 .button-bar .button-group {
   float: right;
 }
+
+/* line 102, ../scss/_overrides.scss */
+.button {
+  background-color: #FFF;
+  font: 0.2em "Lato", "Helvetica", "Sans Serif";
+  color: #71655D;
+}
+
+/* line 108, ../scss/_overrides.scss */
+.button-bar .button-group {
+  border: 1px solid #71655D;
+}
+
+/* line 113, ../scss/_overrides.scss */
+a.button hover {
+  background-color: 847870;
+}
+
+/* line 117, ../scss/_overrides.scss */
+table tr th, table tr td {
+  font: "Lato", "Helvetica", "Sans Serif";
+  padding: .5rem, 1rem;
+}
+
+/* line 122, ../scss/_overrides.scss */
+tr {
+  border: 1px solid #71655D;
+}
