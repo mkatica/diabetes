@@ -9295,3 +9295,9 @@ table tr th, table tr td {
 tr {
   border: 1px solid #71655D;
 }
+
+/* line 126, ../scss/_overrides.scss */
+canvas {
+  width: 100% !important;
+  height: auto !important;
+}

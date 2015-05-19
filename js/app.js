@@ -21,9 +21,33 @@ var weeklyGlucoseTotals = {
       ]
     }
     var chartOptions = {
-      scaleGridLineColor : "rgba(113,101,93,.3)"
-      // scaleShowVerticalLines: false,
+      scaleGridLineColor : "rgba(113,101,93,.1)",
+      scaleShowVerticalLines: false,
+      pointDo : true,
+      scaleFontFamily: "'Lato', Helvetica Neue', 'Helvetica', 'Arial', sans-serif",
+      scaleFontStyle: "300",
+      scaleFontColor: "#71655D",
     }
+
+window.onload = function() {
+    var ctx = document.getElementById("canvas").getContext("2d");
+    window.myLine = new Chart(ctx).Line(weeklyGlucoseTotals, {
+        responsive: true
+    });
+}
+
+// window.onload = function() {
+//     Chart.defaults.global.tooltipFillColor = "rgba(0,0,0,0.8)";
+//     Chart.defaults.global.tooltipCornerRadius = 15;
+//     Chart.defaults.global.tooltipYPadding = 20;
+//     Chart.defaults.global.tooltipFontFamily = "'Dosis'";
+//     Chart.defaults.global.scaleFontFamily = "'Dosis'";
+//     var ctx = document.getElementById("canvas").getContext("2d");
+//     window.myBar = new Chart(ctx).Bar(barChartData, {
+//         responsive: true
+//     });
+// }
+
 //Get context with jQuery - using jQuery's .get() method.
 var glucoseTotal = $("#glucoseTotal").get(0).getContext("2d");
 //This will get the first returned node in the jQuery collection.
@@ -44,3 +68,5 @@ var options = {
 };
 var thisWeek = $("#dailyExerciseGoal").get(0).getContext("2d");
 var myWeeklyGoal = new Chart(thisWeek).Doughnut(dailyExerciseGoal, options);
+
+
