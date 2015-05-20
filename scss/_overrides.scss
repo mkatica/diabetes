@@ -37,7 +37,7 @@ $main-typeface: 'Lato', 'Helvetica', 'Sans Serif';
 
 
 body {
-    background-color: #EFEDEA;
+  background-color: #EFEDEA;
 }
 
 #top-bar-override .contain-to-grid, .top-bar {
@@ -58,6 +58,7 @@ h1 {
   text-transform: uppercase;
   font-weight: 300; 
   margin-top: 1rem;
+  margin-bottom: .8rem;
 }
 
 h1#top-header {
@@ -95,6 +96,16 @@ h2, h3, h4 {
   border-radius: 3px;
 }
 
+.large-9.columns {
+  padding-left: 0rem;
+  padding-right: .7rem;
+}
+
+.large-3.columns {
+  padding-left: .7rem;
+  padding-right: 0rem;
+}
+
 button, .button {
   background-color: #FFF;
   font: .2em $main-typeface;
@@ -104,6 +115,8 @@ button, .button {
 
 a.tiny.button.radius {
   border-color: #A79C95;
+  float: right;
+  margin-bottom: 0px;
 }
 
 button.group.radius {
@@ -119,11 +132,6 @@ button.group.radius {
   color: #71655D;
 }
 
-a {
-  color: #008CBA;
-  text-decoration: none;
-  line-height: inherit;
-}
 
 table {
   font: $main-typeface; 
