@@ -9264,39 +9264,60 @@ h2, h3, h4 {
 }
 
 /* line 98, ../scss/_overrides.scss */
+button, .button {
+  background-color: #FFF;
+  font: 0.2em "Lato", "Helvetica", "Sans Serif";
+  color: #71655D;
+  border-width: 1px 0px 1px 1px;
+}
+
+/* line 105, ../scss/_overrides.scss */
+a.tiny.button.radius {
+  border-color: #A79C95;
+}
+
+/* line 109, ../scss/_overrides.scss */
+button.group.radius {
+  border-color: #A79C95;
+}
+
+/* line 113, ../scss/_overrides.scss */
 .button-bar .button-group {
   float: right;
 }
 
-/* line 102, ../scss/_overrides.scss */
-.button {
-  background-color: #FFF;
-  font: 0.2em "Lato", "Helvetica", "Sans Serif";
+/* line 117, ../scss/_overrides.scss */
+.tiny.button.radius:hover {
+  background-color: #EFEDEA;
   color: #71655D;
 }
 
-/* line 108, ../scss/_overrides.scss */
-.button-bar .button-group {
-  border: 1px solid #71655D;
+/* line 122, ../scss/_overrides.scss */
+a {
+  color: #008CBA;
+  text-decoration: none;
+  line-height: inherit;
 }
 
-/* line 113, ../scss/_overrides.scss */
-a.button hover {
-  background-color: 847870;
+/* line 128, ../scss/_overrides.scss */
+table {
+  font: "Lato", "Helvetica", "Sans Serif";
+  border: 0px;
 }
 
-/* line 117, ../scss/_overrides.scss */
+/* line 133, ../scss/_overrides.scss */
 table tr th, table tr td {
   font: "Lato", "Helvetica", "Sans Serif";
   padding: .5rem, 1rem;
+  color: #71655D;
 }
 
-/* line 122, ../scss/_overrides.scss */
+/* line 139, ../scss/_overrides.scss */
 tr {
   border: 1px solid #71655D;
 }
 
-/* line 126, ../scss/_overrides.scss */
+/* line 143, ../scss/_overrides.scss */
 canvas {
   width: 100% !important;
   height: auto !important;

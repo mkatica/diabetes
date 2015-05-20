@@ -95,28 +95,45 @@ h2, h3, h4 {
   border-radius: 3px;
 }
 
+button, .button {
+  background-color: #FFF;
+  font: .2em $main-typeface;
+  color: #71655D;
+  border-width: 1px 0px 1px 1px;
+}
+
+a.tiny.button.radius {
+  border-color: #A79C95;
+}
+
+button.group.radius {
+  border-color: #A79C95;
+} 
+
 .button-bar .button-group {
   float: right;
 }
 
-.button {
-  background-color: #FFF;
-  font: .2em $main-typeface;
+.tiny.button.radius:hover{
+  background-color: #EFEDEA;
   color: #71655D;
 }
 
-.button-bar .button-group{
-  border: 1px solid #71655D;
+a {
+  color: #008CBA;
+  text-decoration: none;
+  line-height: inherit;
 }
 
-
-a.button hover {
-  background-color: 847870;
+table {
+  font: $main-typeface; 
+  border: 0px;
 }
 
 table tr th, table tr td {
   font: $main-typeface; 
   padding: .5rem, 1rem;
+  color: $type-color;
 }
 
 tr {
