@@ -9309,23 +9309,33 @@ button.group.radius {
 
 /* line 136, ../scss/_overrides.scss */
 table {
-  font: "Lato", "Helvetica", "Sans Serif";
-  border: 0px;
+  font-family: "Lato", "Helvetica", "Sans Serif";
+  border-collapse: collapse;
+  border-style: hidden;
+  width: 100%;
 }
 
-/* line 141, ../scss/_overrides.scss */
-table tr th, table tr td {
-  font: "Lato", "Helvetica", "Sans Serif";
-  padding: .5rem, 1rem;
+/* line 143, ../scss/_overrides.scss */
+table tr th, table tr td, table thead tr th, table tfoot tr th, table tfoot tr td, table tbody tr th, table tbody tr td, table tr td {
+  font-family: "Lato", "Helvetica", "Sans Serif";
+  font-weight: 300;
   color: #71655D;
-}
-
-/* line 147, ../scss/_overrides.scss */
-tr {
-  border: 1px solid #71655D;
+  line-height: 2.2rem;
+  background-color: #FFF;
 }
 
 /* line 151, ../scss/_overrides.scss */
+table tr, table th {
+  border: 1px solid #A79C95;
+}
+
+/* line 155, ../scss/_overrides.scss */
+table tr td {
+  padding-top: .5rem;
+  padding-right: 2.7rem;
+}
+
+/* line 160, ../scss/_overrides.scss */
 canvas {
   width: 100% !important;
   height: auto !important;
