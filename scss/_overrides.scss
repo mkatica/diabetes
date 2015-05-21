@@ -157,7 +157,14 @@ table tr td {
   padding-right: 2.7rem; 
 }
 
-canvas{
-    width: 100% !important;
-    height: auto !important;
+canvas {
+  width: 100% !important;
+  height: auto !important;
+}
+
+.exercise {
+  background-color: #FFF;
+  font: .5em $main-typeface;
+  border-color: #71655D;
+  border-radius: 3px;
 }

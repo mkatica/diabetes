@@ -9340,3 +9340,11 @@ canvas {
   width: 100% !important;
   height: auto !important;
 }
+
+/* line 165, ../scss/_overrides.scss */
+.exercise {
+  background-color: #FFF;
+  font: 0.5em "Lato", "Helvetica", "Sans Serif";
+  border-color: #71655D;
+  border-radius: 3px;
+}
