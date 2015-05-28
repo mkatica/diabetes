@@ -56,12 +56,12 @@ h1 {
   font: 1.2em $main-typeface;
   color: $type-color;
   text-transform: uppercase;
-  font-weight: 300; 
+  font-weight: 300;
   margin-top: 1rem;
   margin-bottom: .8rem;
 }
 
-h1#top-header {
+h1 #top-header {
   margin-top: 3rem;
 }
 
@@ -73,6 +73,13 @@ h1#top-header {
 
 h2, h3, h4 {
   text-align: center;
+}
+
+h5 {
+  font: .8em $main-typeface;
+  color: $type-color;
+  font-weight: 300;
+  text-align: left;
 }
 
 .panel h3 {
@@ -144,18 +151,21 @@ table tr th, table tr td, table thead tr th, table tfoot tr th, table tfoot tr t
   font-family: $main-typeface; 
   font-weight: 300; 
   color: $type-color;
-  line-height: 2.2rem;
   background-color: #FFF;
+
 }
 
 table tr, table th {
   border: 1px solid #A79C95;
+
 }
 
-table tr td {
+/*
+.messages tr {
   padding-top: .5rem;
   padding-right: 2.7rem; 
-}
+  line-height: 2.2rem;
+}*/
 
 canvas {
   width: 100% !important;
@@ -168,3 +178,8 @@ canvas {
   border-color: #71655D;
   border-radius: 3px;
 }
+
+.care-team h4 {
+  text-align: left;
+}
+
