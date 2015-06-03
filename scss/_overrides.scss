@@ -103,6 +103,13 @@ h5 {
   border-radius: 3px;
 }
 
+/*.panel {
+  background-color: #FFF;
+  border-color: #A79C95;
+  border: 2px;
+  border-radius: 3px;
+}*/
+
 .large-9.columns {
   padding-left: 0rem;
   padding-right: .7rem;
@@ -147,11 +154,14 @@ table {
   width: 100%;
 }
 
+table .appts {
+  background: red}
+
 table tr th, table tr td, table thead tr th, table tfoot tr th, table tfoot tr td, table tbody tr th, table tbody tr td, table tr td {
   font-family: $main-typeface; 
   font-weight: 300; 
   color: $type-color;
-  background-color: #FFF;
+/*  background-color: #FFF;*/
 
 }
 
