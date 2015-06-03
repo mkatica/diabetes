@@ -102,7 +102,7 @@ h5 {
   text-align:left;
 }
 
-.care-team h4 {
+h3.text-align-left {
   text-align: left;
 }
 
@@ -166,45 +166,16 @@ a.tiny.button:hover {
   border-radius: 3px;
   font-size: .8em
 }
+
 a.view-details-button {
-  color:#A79C95;
+  color:$type-color;
 }
 
-/*td.view-details-button{
-  color:#A79C95;
-  a:hover {
-    color: red;
-  }
+/*a.view-details-button:hover {
+    color:#EE5876;
 }*/
 
-/*  td.view-details-button {
-    font: .6em $main-typeface #A79C95;
-  }
-
-*/
-
-/*button, .button {
-  background-color: #FFF;
-  font: .2em $main-typeface;
-  color: #71655D;
-  border-width: 1px 0px 1px 1px;
-}
-
-a.tiny.button.radius {
-  border-color: #A79C95;
-  float: right;
-  margin-bottom: 0px;
-}
-
-button.group.radius {
-  border-color: #A79C95;
-} 
-
-.tiny.button.radius:hover{
-  background-color: #EFEDEA;
-  color: #71655D;
-}*/
-
+/*TABLE*/
 
 table {
   font-family: $main-typeface; 
@@ -225,14 +196,18 @@ table tr th, table tr td, table thead tr th, table tfoot tr th, table tfoot tr t
   font-weight: 300; 
   color: $type-color;
   padding: 0px;
-/*  background-color: #FFF;*/
 }
 
-td.italic-date {
+.italic-date {
   font-style: italic;
   font-weight: 100;
-  font-size: .8em;
+  font-size: .7em;
+  line-height: .6em;
+  td {
+    padding-right: 10px;
+  } 
 }
+
 
 table tr, table th {
   border: 1px solid #A79C95;
