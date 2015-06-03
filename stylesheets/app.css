@@ -9158,12 +9158,48 @@ th.hide-for-touch {
   }
 }
 /* line 6, ../scss/_overrides.scss */
+a.tiny.button {
+  background-color: #18A19A;
+  color: #fff;
+}
+
+/* line 11, ../scss/_overrides.scss */
+a.tiny.button:hover {
+  background-color: #0A625C;
+  color: #fff;
+}
+
+/* line 16, ../scss/_overrides.scss */
+.lone-wolf {
+  list-style-type: none;
+  float: right;
+}
+/* line 19, ../scss/_overrides.scss */
+.lone-wolf li {
+  float: left;
+  border: 1px solid #777;
+  padding: 5px;
+  font-size: .8em;
+  font-family: "Lato", "Helvetica", "Sans Serif";
+  margin-left: 5px;
+}
+/* line 27, ../scss/_overrides.scss */
+.lone-wolf li:hover {
+  background-color: #777;
+  color: #fff;
+}
+/* line 31, ../scss/_overrides.scss */
+.lone-wolf a li:hover {
+  color: #fff;
+}
+
+/* line 38, ../scss/_overrides.scss */
 .shell {
   margin: 0 auto;
   width: 80%;
 }
 
-/* line 11, ../scss/_overrides.scss */
+/* line 43, ../scss/_overrides.scss */
 .barback {
   background-color: #5CDBD5;
   margin-top: 15px;
@@ -9173,7 +9209,7 @@ th.hide-for-touch {
   border-radius: 10px;
 }
 
-/* line 20, ../scss/_overrides.scss */
+/* line 52, ../scss/_overrides.scss */
 .setrange {
   background-color: #18A19A;
   border-radius: 12px;
@@ -9182,7 +9218,7 @@ th.hide-for-touch {
   width: 47%;
 }
 
-/* line 28, ../scss/_overrides.scss */
+/* line 60, ../scss/_overrides.scss */
 .target {
   background-color: #EE5876;
   border-radius: 12px;
@@ -9193,27 +9229,27 @@ th.hide-for-touch {
   text-align: center;
 }
 
-/* line 39, ../scss/_overrides.scss */
+/* line 71, ../scss/_overrides.scss */
 body {
   background-color: #EFEDEA;
 }
 
-/* line 43, ../scss/_overrides.scss */
+/* line 75, ../scss/_overrides.scss */
 #top-bar-override .contain-to-grid, .top-bar {
   background-color: #18A19A;
 }
 
-/* line 47, ../scss/_overrides.scss */
+/* line 79, ../scss/_overrides.scss */
 .top-bar-section ul li {
   background: #18A19A;
 }
 
-/* line 51, ../scss/_overrides.scss */
+/* line 83, ../scss/_overrides.scss */
 .top-bar-section li:not(.has-form) a:not(.button) {
   background: #18A19A;
 }
 
-/* line 55, ../scss/_overrides.scss */
+/* line 87, ../scss/_overrides.scss */
 h1 {
   font: 1.2em "Lato", "Helvetica", "Sans Serif";
   color: #71655D;
@@ -9223,24 +9259,24 @@ h1 {
   margin-bottom: .8rem;
 }
 
-/* line 64, ../scss/_overrides.scss */
+/* line 96, ../scss/_overrides.scss */
 h1 #top-header {
   margin-top: 3rem;
 }
 
-/* line 68, ../scss/_overrides.scss */
+/* line 100, ../scss/_overrides.scss */
 .panel h2 {
   font: 4em "Lato", "Helvetica", "Sans Serif";
   color: #0A625C;
   font-weight: 300;
 }
 
-/* line 74, ../scss/_overrides.scss */
+/* line 106, ../scss/_overrides.scss */
 h2, h3, h4 {
   text-align: center;
 }
 
-/* line 78, ../scss/_overrides.scss */
+/* line 110, ../scss/_overrides.scss */
 h5 {
   font: 0.8em "Lato", "Helvetica", "Sans Serif";
   color: #71655D;
@@ -9248,7 +9284,7 @@ h5 {
   text-align: left;
 }
 
-/* line 85, ../scss/_overrides.scss */
+/* line 117, ../scss/_overrides.scss */
 .panel h3 {
   font: 1em "Lato", "Helvetica", "Sans Serif";
   color: #71655D;
@@ -9257,14 +9293,14 @@ h5 {
   margin-bottom: .2em;
 }
 
-/* line 93, ../scss/_overrides.scss */
+/* line 125, ../scss/_overrides.scss */
 .panel h4 {
   font: 0.8em "Lato", "Helvetica", "Sans Serif";
   color: #71655D;
   font-weight: 300;
 }
 
-/* line 99, ../scss/_overrides.scss */
+/* line 131, ../scss/_overrides.scss */
 .panel {
   background-color: #FFF;
   border-color: #A79C95;
@@ -9272,19 +9308,19 @@ h5 {
   border-radius: 3px;
 }
 
-/* line 106, ../scss/_overrides.scss */
+/* line 138, ../scss/_overrides.scss */
 .large-9.columns {
   padding-left: 0rem;
   padding-right: .7rem;
 }
 
-/* line 111, ../scss/_overrides.scss */
+/* line 143, ../scss/_overrides.scss */
 .large-3.columns {
   padding-left: .7rem;
   padding-right: 0rem;
 }
 
-/* line 116, ../scss/_overrides.scss */
+/* line 148, ../scss/_overrides.scss */
 button, .button {
   background-color: #FFF;
   font: 0.2em "Lato", "Helvetica", "Sans Serif";
@@ -9292,30 +9328,30 @@ button, .button {
   border-width: 1px 0px 1px 1px;
 }
 
-/* line 123, ../scss/_overrides.scss */
+/* line 155, ../scss/_overrides.scss */
 a.tiny.button.radius {
   border-color: #A79C95;
   float: right;
   margin-bottom: 0px;
 }
 
-/* line 129, ../scss/_overrides.scss */
+/* line 161, ../scss/_overrides.scss */
 button.group.radius {
   border-color: #A79C95;
 }
 
-/* line 133, ../scss/_overrides.scss */
+/* line 165, ../scss/_overrides.scss */
 .button-bar .button-group {
   float: right;
 }
 
-/* line 137, ../scss/_overrides.scss */
+/* line 169, ../scss/_overrides.scss */
 .tiny.button.radius:hover {
   background-color: #EFEDEA;
   color: #71655D;
 }
 
-/* line 143, ../scss/_overrides.scss */
+/* line 175, ../scss/_overrides.scss */
 table {
   font-family: "Lato", "Helvetica", "Sans Serif";
   border-collapse: collapse;
@@ -9323,7 +9359,7 @@ table {
   width: 100%;
 }
 
-/* line 150, ../scss/_overrides.scss */
+/* line 182, ../scss/_overrides.scss */
 table tr th, table tr td, table thead tr th, table tfoot tr th, table tfoot tr td, table tbody tr th, table tbody tr td, table tr td {
   font-family: "Lato", "Helvetica", "Sans Serif";
   font-weight: 300;
@@ -9331,7 +9367,7 @@ table tr th, table tr td, table thead tr th, table tfoot tr th, table tfoot tr t
   background-color: #FFF;
 }
 
-/* line 158, ../scss/_overrides.scss */
+/* line 190, ../scss/_overrides.scss */
 table tr, table th {
   border: 1px solid #A79C95;
 }
@@ -9342,13 +9378,13 @@ table tr, table th {
   padding-right: 2.7rem; 
   line-height: 2.2rem;
 }*/
-/* line 170, ../scss/_overrides.scss */
+/* line 202, ../scss/_overrides.scss */
 canvas {
   width: 100% !important;
   height: auto !important;
 }
 
-/* line 175, ../scss/_overrides.scss */
+/* line 207, ../scss/_overrides.scss */
 .exercise {
   background-color: #FFF;
   font: 0.5em "Lato", "Helvetica", "Sans Serif";
@@ -9356,7 +9392,7 @@ canvas {
   border-radius: 3px;
 }
 
-/* line 182, ../scss/_overrides.scss */
+/* line 214, ../scss/_overrides.scss */
 .care-team h4 {
   text-align: left;
 }
