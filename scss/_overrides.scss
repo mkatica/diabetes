@@ -35,21 +35,42 @@ $main-typeface: 'Lato', 'Helvetica', 'Sans Serif';
   text-align: center;
 }
 
-#top-bar-override .contain-to-grid, .top-bar {
-  background-color: $primary-color;
-} 
+/*MENU BAR*/
 
-.top-bar-section ul li {
+#top-bar-override, .contain-to-grid {
   background: $primary-color;
+  .top-bar {
+    background: $primary-color;
+    h1 a {
+      font: $main-typeface;
+      font-weight: 300;
+    }
+  ul { 
+      background: $primary-color;
+    }
+  }
 }
 
 .top-bar-section li:not(.has-form) a:not(.button) {
   background: $primary-color;
+  font-family: $main-typeface;
+  font-weight: 300;
+  &:hover {
+    background:darken( $primary-color, 15% );
+  }
+}
+
+.top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button) {
+  background: $primary-color;
+  &:hover {
+    background:darken( $primary-color, 15% );
+  }
 }
 
 ul.alert {
   list-style-type: none;
   margin-left: 0px;
+  margin-bottom: 5px;
   height: 35px;
   li {
     display: inline;
@@ -72,13 +93,10 @@ ul.messages {
   }
 }
 
-ul.messages-preview {
-  list-style-type: none;
-  margin: 2.5rem, 0rem, 1.5rem, 0rem;
-  li {
-    display: inline;
-  }
-}
+/*ul.messages-preview li {
+  display: inline;
+  padding-right: 20px;
+}*/
 
 /*TYPE*/
 
@@ -149,7 +167,6 @@ h3.header {
     padding-right: 10px;
   } 
 }
-
 
 
 /*STRUCTURE*/
@@ -304,6 +321,35 @@ table.appts tbody tr:nth-child(even) {
   background: #FFF; 
 }
 
+/*TABS*/
+
+.tabs.vertical {
+  width: 50%;
+  max-width: 50%;
+}
+
+.tabs .tab-title > a {
+  font-family: $main-typeface; 
+  font-weight: 300; 
+  color: $type-color;
+  font-size: .8rem;
+}
+
+ul.messages-preview {
+  list-style-type: none;
+  margin: 2.5rem, 0rem, 1.5rem, 0rem;
+  li {
+    display: inline;
+    padding-right: 20px;
+    font-family: $main-typeface; 
+    font-weight: 300; 
+    color: $type-color;
+    font-size: .8rem;
+  }
+}
+
+$tabs-navigation-font-family: $main-typeface;
+$tabs-vertical-navigation-margin-bottom: 1.25rem;
 
 canvas {
   width: 100% !important;
