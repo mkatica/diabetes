@@ -9275,8 +9275,36 @@ h3.text-align-left {
   text-align: left;
 }
 
+/* line 109, ../scss/_overrides.scss */
+h3.header {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* line 114, ../scss/_overrides.scss */
+h5.alert {
+  color: #0A625C;
+}
+
+/* line 118, ../scss/_overrides.scss */
+.italic-date {
+  font-style: italic;
+  font-weight: 100;
+  font-size: .7em;
+  line-height: .6em;
+}
+/* line 123, ../scss/_overrides.scss */
+.italic-date td {
+  padding-right: 10px;
+}
+
 /*STRUCTURE*/
-/* line 112, ../scss/_overrides.scss */
+/* line 132, ../scss/_overrides.scss */
+body {
+  font-family: "Lato", "Helvetica", "Sans Serif";
+}
+
+/* line 136, ../scss/_overrides.scss */
 .panel {
   background-color: #FFF;
   border-color: #A79C95;
@@ -9284,7 +9312,7 @@ h3.text-align-left {
   border-radius: 3px;
 }
 
-/* line 118, ../scss/_overrides.scss */
+/* line 142, ../scss/_overrides.scss */
 .panel-appts {
   background-color: #FFF;
   border-color: #A79C95;
@@ -9294,48 +9322,56 @@ h3.text-align-left {
   margin-top: 2.5rem;
 }
 
-/* line 127, ../scss/_overrides.scss */
+/* line 151, ../scss/_overrides.scss */
 .large-9.columns {
   padding-left: 0rem;
   padding-right: .7rem;
 }
 
-/* line 132, ../scss/_overrides.scss */
+/* line 156, ../scss/_overrides.scss */
 .large-3.columns {
   padding-left: .7rem;
   padding-right: 0rem;
 }
 
-/* line 137, ../scss/_overrides.scss */
+/* line 161, ../scss/_overrides.scss */
 .small-3.columns {
   padding-left: 0rem;
   padding-right: .7rem;
 }
 
-/* line 142, ../scss/_overrides.scss */
+/* line 166, ../scss/_overrides.scss */
 .small-9.columns {
   padding-left: .7rem;
   padding-right: 0rem;
 }
 
-/* line 147, ../scss/_overrides.scss */
+/* line 171, ../scss/_overrides.scss */
+.alert {
+  background: rgba(238, 88, 118, 0.2);
+  border-radius: 3px;
+  padding: 5px;
+}
+
+/*BUTTONS*/
+/* line 179, ../scss/_overrides.scss */
 a.tiny.button {
   background-color: #18A19A;
   color: #fff;
 }
 
-/* line 152, ../scss/_overrides.scss */
+/* line 184, ../scss/_overrides.scss */
 a.tiny.button:hover {
   background-color: #0A625C;
   color: #fff;
 }
 
-/* line 157, ../scss/_overrides.scss */
+/* line 189, ../scss/_overrides.scss */
 .button-bar .button-group {
   float: right;
 }
 
-/* line 161, ../scss/_overrides.scss */
+/* line 193, ../scss/_overrides.scss */
 .view-details-button {
   float: right;
   border: 1px solid #A79C95;
@@ -9345,16 +9381,31 @@ a.tiny.button:hover {
   font-size: 0.8em;
 }
 
-/* line 170, ../scss/_overrides.scss */
+/* line 202, ../scss/_overrides.scss */
 a.view-details-button {
   color: #71655D;
+}
+
+/* line 206, ../scss/_overrides.scss */
+.care-team-button {
+  border: 1px solid #A79C95;
+  padding: 6px 10px;
+  /*  margin-bottom: 20px;*/
+  border-radius: 3px;
+  font-size: 0.8em;
+}
+
+/* line 214, ../scss/_overrides.scss */
+a.care-team-button {
+  color: #71655D;
+  font-weight: 300;
 }
 
 /*a.view-details-button:hover {
     color:#EE5876;
 }*/
 /*TABLE*/
-/* line 180, ../scss/_overrides.scss */
+/* line 225, ../scss/_overrides.scss */
 table {
   font-family: "Lato", "Helvetica", "Sans Serif";
   border-collapse: collapse;
@@ -9362,13 +9413,16 @@ table {
   width: 100%;
 }
 
-/* line 187, ../scss/_overrides.scss */
+/* line 232, ../scss/_overrides.scss */
 table.appts {
-  background: FFF table tr td;
-  background-padding: .2rem;
+  background-color: #FFFFFF;
+}
+/* line 234, ../scss/_overrides.scss */
+table.appts table tr td {
+  padding: .2rem;
 }
 
-/* line 194, ../scss/_overrides.scss */
+/* line 239, ../scss/_overrides.scss */
 table tr th, table tr td, table thead tr th, table tfoot tr th, table tfoot tr td, table tbody tr th, table tbody tr td, table tr td {
   font-family: "Lato", "Helvetica", "Sans Serif";
   font-weight: 300;
@@ -9376,38 +9430,32 @@ table tr th, table tr td, table thead tr th, table tfoot tr th, table tfoot tr t
   padding: 0px;
 }
 
-/* line 201, ../scss/_overrides.scss */
-.italic-date {
-  font-style: italic;
-  font-weight: 100;
-  font-size: .7em;
-  line-height: .6em;
-}
-/* line 206, ../scss/_overrides.scss */
-.italic-date td {
-  padding-right: 10px;
+/* line 246, ../scss/_overrides.scss */
+table.appts tbody tr.even, table.appts tbody tr.alt {
+  background: #FFF;
 }
 
-/* line 212, ../scss/_overrides.scss */
+/* line 250, ../scss/_overrides.scss */
+table.appts tbody tr:nth-child(even) {
+  background: #FFF;
+}
+
+/* line 255, ../scss/_overrides.scss */
 table tr, table th {
   border: 1px solid #A79C95;
+  background-color: #FFFFFF;
 }
 
-/* line 217, ../scss/_overrides.scss */
+/* line 261, ../scss/_overrides.scss */
 canvas {
   width: 100% !important;
   height: auto !important;
 }
 
-/* line 222, ../scss/_overrides.scss */
+/* line 266, ../scss/_overrides.scss */
 .exercise {
   background-color: #FFF;
   font: 0.5em "Lato", "Helvetica", "Sans Serif";
   border-color: #71655D;
   border-radius: 3px;
-}
-
-/* line 229, ../scss/_overrides.scss */
-.care-team h4 {
-  text-align: left;
 }

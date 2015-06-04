@@ -106,8 +106,32 @@ h3.text-align-left {
   text-align: left;
 }
 
+h3.header {
+  margin-top:1.5rem;
+  margin-bottom:1rem;
+}
+
+h5.alert {
+  color: #0A625C;
+}
+
+.italic-date {
+  font-style: italic;
+  font-weight: 100;
+  font-size: .7em;
+  line-height: .6em;
+  td {
+    padding-right: 10px;
+  } 
+}
+
+
 
 /*STRUCTURE*/
+
+body {
+  font-family: $main-typeface;
+}
 
 .panel {
   background-color: #FFF;
@@ -144,6 +168,14 @@ h3.text-align-left {
   padding-right: 0rem;
 }
 
+.alert {
+  background: rgba(238,88,118, 0.2);
+  border-radius: 3px;
+  padding: 5px;
+}
+
+/*BUTTONS*/
+
 a.tiny.button {
   background-color: $primary-color;
   color: #fff;
@@ -171,6 +203,19 @@ a.view-details-button {
   color:$type-color;
 }
 
+.care-team-button {
+  border: 1px solid #A79C95;
+  padding: 6px 10px;
+/*  margin-bottom: 20px;*/
+  border-radius: 3px;
+  font-size: .8em
+}
+
+a.care-team-button {
+  color:$type-color;
+  font-weight: 300;
+}
+
 /*a.view-details-button:hover {
     color:#EE5876;
 }*/
@@ -185,7 +230,7 @@ table {
 }
 
 table.appts {
-  background: FFF
+  background-color: #FFFFFF;
   table tr td {
     padding: .2rem;
   }
@@ -198,21 +243,20 @@ table tr th, table tr td, table thead tr th, table tfoot tr th, table tfoot tr t
   padding: 0px;
 }
 
-.italic-date {
-  font-style: italic;
-  font-weight: 100;
-  font-size: .7em;
-  line-height: .6em;
-  td {
-    padding-right: 10px;
-  } 
+table.appts tbody tr.even, table.appts tbody tr.alt {
+  background: #FFF
+}
+
+table.appts tbody tr:nth-child(even) { 
+  background: #FFF; 
 }
 
 
 table tr, table th {
   border: 1px solid #A79C95;
-
+  background-color: #FFFFFF;
 }
+
 
 canvas {
   width: 100% !important;
@@ -224,9 +268,5 @@ canvas {
   font: .5em $main-typeface;
   border-color: #71655D;
   border-radius: 3px;
-}
-
-.care-team h4 {
-  text-align: left;
 }
 
