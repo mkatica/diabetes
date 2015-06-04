@@ -39,7 +39,7 @@
       <div class="small-12 columns">
         <div class="small-3 columns">
           <div class ="panel-appts">
-            <h1>Debra Campbell</h1>
+            <h1 class="header">Debra Campbell</h1>
             <h4>Member since 2002</h4>
             <h4>Age: 43</h4>
             <h4>Birthdate: July 20, 1971</h4>
@@ -49,10 +49,15 @@
           <div class="panel-appts">
             <div class="small-8 columns">
               <h3 class="text-align-left header">Upcoming Appointments</h3>
-                <div class="alert">
+<!--                 <div class="alert">
                   <h5>Your labs are out-of-date, please schedule a lab test.</h5>
                   <a href="#" class="care-team-button">Schedule Now</a>
                 </div>
+ -->                          
+              <ul class="alert">
+                <li><h5>Your labs are out-of-date, please schedule a lab test.</h5></li>
+                <li class="float-right"><a href="#" class="care-team-button">Schedule Now</a></li>
+              </ul>
                 <table class="appts">
                   <tbody>
                     <tr>
@@ -86,16 +91,18 @@
             <div class="small-4 columns">
               <div>
                 <h3 class="text-align-left header">Care Team</h3>
+              </div>
+              <div class="care-team-names">
                 <h5>Dr. Melissa Lee</h5>
                 <h5 class="italic-date">Primary Care Physician</h5>
                 <a href="#" class="care-team-button">Message</a>
               </div>
-              <div>
+              <div class="care-team-names">
                 <h5>Michelle Anderson, RN</h5>
                 <h5 class="italic-date">Diabetes Care RN</h5>
                 <a href="#" class="care-team-button">Message</a>
               </div>
-              <div>
+              <div class="care-team-names">
                 <h5>Dr. Phillip Craig</h5>
                 <h5 class="italic-date">Endocronologist</h5>
                 <a href="#" class="care-team-button">Message</a>
@@ -115,9 +122,25 @@
           <div class="small-4 columns">
             <h1>Synced Apps </h1>
             <div class="panel">
-              <h3>Exercise Today</h3>
+                <h5>My Fitness Pal</h5>
+                <h5 class="italic-date">Synced Today, 11:34am</h5>
+                <div class="switch round tiny">
+                  <input id="exampleRadioSwitch3" type="radio" name="testGroup">
+                  <label for="exampleRadioSwitch3"></label>
+                </div>
+                <h5>Fitbit One</h5>
+                <h5 class="italic-date">Synced Today, 10:11am</h5>
+                <div class="switch round tiny">
+                  <input id="exampleRadioSwitch3" type="radio" name="testGroup">
+                  <label for="exampleRadioSwitch3"></label>
+                </div>
+                <h5>Jawbone UP</h5>
+                <h5 class="italic-date">Account info out of date</h5>
+                <div class="switch round tiny">
+                  <input id="exampleRadioSwitch3" type="radio" name="testGroup">
+                  <label for="exampleRadioSwitch3"></label>
+                </div>
             </div>
-            <a href="#" class="button">Add Exercise</a>
           </div>
         </div>
       </div>
