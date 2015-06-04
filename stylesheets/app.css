@@ -9323,59 +9323,64 @@ body {
   border-radius: 3px;
 }
 
-/* line 150, ../scss/_overrides.scss */
+/* line 151, ../scss/_overrides.scss */
 .panel-appts {
   background-color: #FFF;
   border-color: #A79C95;
   border: 2px;
   border-radius: 3px;
-  height: 450px;
+  height: 400px;
   margin-top: 2.5rem;
 }
 
-/* line 159, ../scss/_overrides.scss */
+/* line 160, ../scss/_overrides.scss */
+.synced-apps {
+  height: 175px;
+}
+
+/* line 164, ../scss/_overrides.scss */
 .large-9.columns {
   padding-left: 0rem;
   padding-right: .7rem;
 }
 
-/* line 164, ../scss/_overrides.scss */
+/* line 169, ../scss/_overrides.scss */
 .large-3.columns {
   padding-left: .7rem;
   padding-right: 0rem;
 }
 
-/* line 169, ../scss/_overrides.scss */
+/* line 174, ../scss/_overrides.scss */
 .small-3.columns {
   padding-left: 0rem;
   padding-right: .7rem;
 }
 
-/* line 174, ../scss/_overrides.scss */
+/* line 179, ../scss/_overrides.scss */
 .small-9.columns {
   padding-left: .7rem;
   padding-right: 0rem;
 }
 
-/* line 179, ../scss/_overrides.scss */
+/* line 184, ../scss/_overrides.scss */
 .alert {
   background: rgba(238, 88, 118, 0.2);
   border-radius: 3px;
   padding: 5px;
 }
 
-/* line 185, ../scss/_overrides.scss */
+/* line 190, ../scss/_overrides.scss */
 .care-team-names {
   margin-bottom: 1.2rem;
 }
 
-/* line 189, ../scss/_overrides.scss */
+/* line 194, ../scss/_overrides.scss */
 .left {
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 193, ../scss/_overrides.scss */
+/* line 198, ../scss/_overrides.scss */
 .right {
   display: table-cell;
   vertical-align: middle;
@@ -9383,37 +9388,37 @@ body {
 }
 
 /*BUTTONS*/
-/* line 201, ../scss/_overrides.scss */
+/* line 206, ../scss/_overrides.scss */
 a.tiny.button {
   background-color: #18A19A;
   color: #fff;
 }
 
-/* line 206, ../scss/_overrides.scss */
+/* line 211, ../scss/_overrides.scss */
 a.tiny.button:hover {
   background-color: #0A625C;
   color: #fff;
 }
 
-/* line 211, ../scss/_overrides.scss */
+/* line 216, ../scss/_overrides.scss */
 a.button.expand {
   background-color: #FFF;
   color: #71655D;
   border-radius: 3px;
 }
 
-/* line 217, ../scss/_overrides.scss */
+/* line 222, ../scss/_overrides.scss */
 a.button.expand:hover {
   background: rgba(113, 101, 93, 0.1);
   border-radius: 3px;
 }
 
-/* line 222, ../scss/_overrides.scss */
+/* line 227, ../scss/_overrides.scss */
 .button-bar .button-group {
   float: right;
 }
 
-/* line 226, ../scss/_overrides.scss */
+/* line 231, ../scss/_overrides.scss */
 .view-details-button {
   float: right;
   border: 1px solid #A79C95;
@@ -9423,12 +9428,12 @@ a.button.expand:hover {
   font-size: 0.8em;
 }
 
-/* line 235, ../scss/_overrides.scss */
+/* line 240, ../scss/_overrides.scss */
 a.view-details-button {
   color: #71655D;
 }
 
-/* line 239, ../scss/_overrides.scss */
+/* line 244, ../scss/_overrides.scss */
 .care-team-button {
   border: 1px solid #A79C95;
   padding: 4px 10px;
@@ -9437,7 +9442,7 @@ a.view-details-button {
   font-size: 0.8em;
 }
 
-/* line 247, ../scss/_overrides.scss */
+/* line 252, ../scss/_overrides.scss */
 a.care-team-button {
   color: #71655D;
   font-weight: 300;
@@ -9446,20 +9451,20 @@ a.care-team-button {
 /*a.view-details-button:hover {
     color:#EE5876;
 }*/
-/* line 256, ../scss/_overrides.scss */
+/* line 261, ../scss/_overrides.scss */
 .switch input:checked + label {
   background: #18A19A;
 }
 
 /*TABLE*/
-/* line 262, ../scss/_overrides.scss */
+/* line 267, ../scss/_overrides.scss */
 table {
   border-collapse: collapse;
   border-style: hidden;
   width: 100%;
 }
 
-/* line 268, ../scss/_overrides.scss */
+/* line 273, ../scss/_overrides.scss */
 table tr th, table tr td, table thead tr th, table tfoot tr th, table tfoot tr td, table tbody tr th, table tbody tr td, table tr td {
   font-family: "Lato", "Helvetica", "Sans Serif";
   font-weight: 300;
@@ -9467,28 +9472,28 @@ table tr th, table tr td, table thead tr th, table tfoot tr th, table tfoot tr t
   padding: 0px;
 }
 
-/* line 275, ../scss/_overrides.scss */
+/* line 280, ../scss/_overrides.scss */
 table.appts tbody tr.even, table.appts tbody tr.alt {
   background: #FFF;
 }
 
-/* line 279, ../scss/_overrides.scss */
+/* line 284, ../scss/_overrides.scss */
 table.appts tbody tr:nth-child(even) {
   background: #FFF;
 }
 
-/* line 283, ../scss/_overrides.scss */
+/* line 288, ../scss/_overrides.scss */
 table tr, table th {
   border: 1px solid #A79C95;
 }
 
-/* line 288, ../scss/_overrides.scss */
+/* line 293, ../scss/_overrides.scss */
 canvas {
   width: 100% !important;
   height: auto !important;
 }
 
-/* line 293, ../scss/_overrides.scss */
+/* line 298, ../scss/_overrides.scss */
 .exercise {
   background-color: #FFF;
   font: 0.5em "Lato", "Helvetica", "Sans Serif";
