@@ -9553,13 +9553,29 @@ ul.messages-preview li {
   font-size: .8rem;
 }
 
-/* line 354, ../scss/_overrides.scss */
+/* line 351, ../scss/_overrides.scss */
+ul.glucose-list {
+  list-style-type: none;
+  margin-bottom: 0px;
+  margin-left: 0px;
+}
+/* line 355, ../scss/_overrides.scss */
+ul.glucose-list li {
+  display: inline;
+  padding-right: 20px;
+  font-family: "Lato", "Helvetica", "Sans Serif";
+  font-weight: 300;
+  color: #71655D;
+  font-size: .8rem;
+}
+
+/* line 368, ../scss/_overrides.scss */
 canvas {
   width: 100% !important;
   height: auto !important;
 }
 
-/* line 359, ../scss/_overrides.scss */
+/* line 373, ../scss/_overrides.scss */
 .exercise {
   background-color: #FFF;
   font: 0.5em "Lato", "Helvetica", "Sans Serif";
