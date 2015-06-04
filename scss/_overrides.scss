@@ -186,6 +186,16 @@ body {
   margin-bottom: 1.2rem;
 }
 
+.left {
+  display: table-cell;
+  vertical-align: middle;
+}
+.right {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: right;
+}
+
 /*BUTTONS*/
 
 a.tiny.button {
@@ -196,6 +206,17 @@ a.tiny.button {
 a.tiny.button:hover {
   background-color: $secondary-color;
   color: #fff;
+}
+
+a.button.expand {
+  background-color: #FFF;
+  color: #71655D;
+  border-radius: 3px;
+}
+
+a.button.expand:hover {
+  background: rgba(113,101,93, 0.1);
+  border-radius: 3px;
 }
 
 .button-bar .button-group {
