@@ -45,14 +45,15 @@
             <ul class="messages">
               <li><a href="#" class="messages-button">Compose Message</a></li>
               <li><a href="#" class="messages-button">View</a></li>
+              <button href="#" data-dropdown="drop1" aria-controls="drop1" aria-expanded="false" class="button dropdown tiny radius">View</button><br>
+                <ul id="drop1" data-dropdown-content class="f-dropdown" aria-hidden="true">
+                  <li><a href="#">Unread Only</a></li>
+                  <li><a href="#">Sent Only</a></li>
+                  <li><a href="#">Messages from my Doctor</a></li>
+                  <li><a href="#">Messages from my Nurse</a></li>
+                </ul>
             </ul>
-            <button href="#" data-dropdown="drop1" aria-controls="drop1" aria-expanded="false" class="button dropdown tiny radius">View</button><br>
-              <ul id="drop1" data-dropdown-content class="f-dropdown" aria-hidden="true">
-                <li><a href="#">Unread Only</a></li>
-                <li><a href="#">Sent Only</a></li>
-                <li><a href="#">Messages from my Doctor</a></li>
-                <li><a href="#">Messages from my Nurse</a></li>
-              </ul>
+
           </div>
         </div>
       </div>
@@ -84,13 +85,11 @@
           </table>
           <ul class="tabs vertical" data-tab>
             <li class="tab-title active"><a href="#panel11">
-              <ul class="inside">
+              <ul class="messages-preview">
                 <li><a href="">SandyRN</a></li>
                 <li><a href="">RE: High morning glucose</a></li>
                 <li><a href="">April 14</a></li>
               </ul>
-            </li>
-
             </a></li>
             <li class="tab-title"><a href="#panel21">Tab 2</a></li>
             <li class="tab-title"><a href="#panel31">Tab 3</a></li>

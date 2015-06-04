@@ -50,6 +50,7 @@ $main-typeface: 'Lato', 'Helvetica', 'Sans Serif';
 ul.alert {
   list-style-type: none;
   margin-left: 0px;
+  height: 35px;
   li {
     display: inline;
   }
@@ -57,15 +58,25 @@ ul.alert {
     float: right;
     display: inline;
   }
+  h5 {
+    color: #71655D;
+    float:left;
+  }
 }
 
 ul.messages {
   list-style-type: none;
-  margin-left: 0px;
   margin-top: 2.5rem;
-  margin-bottom: 1.5rem;
   li {
-    display: inline-block;
+    display: inline;
+  }
+}
+
+ul.messages-preview {
+  list-style-type: none;
+  margin: 2.5rem, 0rem, 1.5rem, 0rem;
+  li {
+    display: inline;
   }
 }
 
@@ -129,10 +140,6 @@ h3.header {
   margin-bottom:1rem;
 }
 
-h5.alert {
-  color: #0A625C;
-}
-
 .italic-date {
   font-style: italic;
   font-weight: 100;
@@ -188,7 +195,6 @@ body {
   padding: 5px;
 }
 
-
 .care-team-names {
   margin-bottom: 1.2rem;
 }
@@ -197,6 +203,7 @@ body {
   display: table-cell;
   vertical-align: middle;
 }
+
 .right {
   display: table-cell;
   vertical-align: middle;
@@ -278,13 +285,15 @@ table {
   border-collapse: collapse;
   border-style: hidden;
   width: 100%;
-}
-
-table tr th, table tr td, table thead tr th, table tfoot tr th, table tfoot tr td, table tbody tr th, table tbody tr td, table tr td {
-  font-family: $main-typeface; 
-  font-weight: 300; 
-  color: $type-color;
-  padding: 0px;
+    tr th, tr td, thead tr th, tbody tr th, tbody tr td, table tr td {
+      font-family: $main-typeface; 
+      font-weight: 300; 
+      color: $type-color;
+      padding: 0px;  
+    }
+    tr, th {
+      border: 1px solid #A79C95;
+    }
 }
 
 table.appts tbody tr.even, table.appts tbody tr.alt {
@@ -293,10 +302,6 @@ table.appts tbody tr.even, table.appts tbody tr.alt {
 
 table.appts tbody tr:nth-child(even) { 
   background: #FFF; 
-}
-
-table tr, table th {
-  border: 1px solid #A79C95;
 }
 
 
