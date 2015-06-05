@@ -66,12 +66,29 @@ $main-typeface: 'Lato', 'Helvetica', 'Sans Serif';
     background:darken( $primary-color, 15% );
   }
 }
+/*IMAGES*/
+
+img.pink-alert {
+  width: 15px;
+  height: 15px;
+  float: left;
+  margin-right: 5px;
+  margin-top: 3px;
+}
+
+img.care-team {
+  border-radius:50%;
+  border: 1px solid $white;
+  display:inline-block;
+  box-shadow: 0 2px 3px #71655D;
+  float: left;
+  margin-right: 20px; 
+}
 
 ul.alert {
   list-style-type: none;
   margin-left: 0px;
   margin-bottom: 5px;
-  height: 35px;
   li {
     display: inline;
   }
@@ -206,10 +223,20 @@ body {
   padding-right: 0rem;
 }
 
-.alert {
-  background: rgba(238,88,118, 0.2);
-  border-radius: 3px;
-  padding: 5px;
+ul.alert {
+  h5 {
+    color: #EE5876;
+    font-weight: 500;
+  }
+  .care-team-button {
+    border: 1px solid #EE5876;
+    padding: 4px 15px;
+    border-radius: 3px;
+    font-size: .8em
+  }
+  a.care-team-button{
+    color: #EE5876;
+  }
 }
 
 .care-team-names {
