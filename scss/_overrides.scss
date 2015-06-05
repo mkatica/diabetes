@@ -45,7 +45,7 @@ $main-typeface: 'Lato', 'Helvetica', 'Sans Serif';
       font: $main-typeface;
       font-weight: 300;
     }
-  ul { 
+    ul { 
       background: $primary-color;
     }
   }
@@ -66,7 +66,14 @@ $main-typeface: 'Lato', 'Helvetica', 'Sans Serif';
     background:darken( $primary-color, 15% );
   }
 }
+
 /*IMAGES*/
+
+img.profile-photo {
+  border: 3px solid $white;
+  float: left;
+  margin: 15px; 
+}
 
 img.pink-alert {
   width: 15px;
@@ -85,35 +92,68 @@ img.care-team {
   margin-right: 20px; 
 }
 
-ul.alert {
+img.profile-photo {
+  border-radius:50%;
+  border: 3px solid $white;
+  display:inline-block;
+  box-shadow: 0 2px 3px #71655D;
+  float: left;
+  margin: 10px 20px 10px 15px; 
+}
+
+/*UL*/
+
+ul.alert, ul.messages, ul.messages-preview, ul.glucose-list {
   list-style-type: none;
-  margin-left: 0px;
-  margin-bottom: 5px;
   li {
     display: inline;
   }
+}
+
+ul.alert {
+  margin-left: 0px;
+  margin-bottom: 5px;
   li.float-right {
     float: right;
-    display: inline;
   }
   h5 {
-    color: #71655D;
-    float:left;
+    color: #EE5876;
+    font-weight: 500;
+    float: left;
+  }
+  .care-team-button {
+    border: 1px solid #EE5876;
+    padding: 4px 15px;
+    border-radius: 3px;
+    font-size: .8em
+  }
+  a.care-team-button{
+    color: #EE5876;
   }
 }
 
 ul.messages {
-  list-style-type: none;
   margin-top: 2.5rem;
+}
+
+ul.messages-preview, ul.glucose-list {
   li {
-    display: inline;
+    padding-right: 20px;
+    font-family: $main-typeface; 
+    font-weight: 300; 
+    color: $type-color;
+    font-size: .8rem;
   }
 }
 
-/*ul.messages-preview li {
-  display: inline;
-  padding-right: 20px;
-}*/
+ul.glucose-list {
+  margin-bottom: 0px;
+  margin-left: 0px;
+}
+
+ul.messages-preview {
+  margin: 2.5rem, 0rem, 1.5rem, 0rem;
+}
 
 /*TYPE*/
 
@@ -131,12 +171,6 @@ h1.top-header {
   margin-bottom: 1.5rem;
 }
 
-.panel h2 {
-  font: 4em $main-typeface;
-  color: #0A625C;
-  font-weight: 300; 
-}
-
 h2, h3, h4 {
   text-align: center;
 }
@@ -146,6 +180,12 @@ h5 {
   color: $type-color;
   font-weight: 300;
   text-align: left;
+}
+
+.panel h2 {
+  font: 4em $main-typeface;
+  color: #0A625C;
+  font-weight: 300; 
 }
 
 .panel h3, .panel-appts h3 {
@@ -168,11 +208,16 @@ h5 {
 
 h3.text-align-left {
   text-align: left;
+  font-weight: 300;
 }
 
 h3.header {
-  margin-top:1.5rem;
+  padding-top:1.5rem;
   margin-bottom:1rem;
+}
+
+h3.no-margin{
+  margin-bottom: .3rem;
 }
 
 .italic-date {
@@ -193,7 +238,7 @@ body {
   background-color: #EFEDEA;
 }
 
-.panel {
+.panel, .panel-appts {
   background-color: #FFF;
   border-color: #A79C95;
   border: 2px;
@@ -201,42 +246,33 @@ body {
 }
 
 .panel-appts {
-  background-color: #FFF;
-  border-color: #A79C95;
-  border: 2px;
-  border-radius: 3px;
-  height: 400px;
+  height: 340px;
   margin-top: 2.5rem;
 }
 
 .synced-apps {
-  height:175px;
+  height:160px;
+  h5 {
+    margin-bottom: .3rem;
+    color: #71655D;
+  }
+  h5.italic-date {
+    margin-bottom: .7rem;
+  }
 }
 
-.large-9.columns, .small-3.columns, .small-2.columns {
+/*.synced-apps-padding {
+  padding-left: .4rem;
+}*/
+
+.left-column {
   padding-left: 0rem;
   padding-right: .7rem;
 }
 
-.large-3.columns, .small-9.columns {
+.right-column {
   padding-left: .7rem;
   padding-right: 0rem;
-}
-
-ul.alert {
-  h5 {
-    color: #EE5876;
-    font-weight: 500;
-  }
-  .care-team-button {
-    border: 1px solid #EE5876;
-    padding: 4px 15px;
-    border-radius: 3px;
-    font-size: .8em
-  }
-  a.care-team-button{
-    color: #EE5876;
-  }
 }
 
 .care-team-names {
@@ -360,33 +396,6 @@ table.appts tbody tr:nth-child(even) {
   font-weight: 300; 
   color: $type-color;
   font-size: .8rem;
-}
-
-ul.messages-preview {
-  list-style-type: none;
-  margin: 2.5rem, 0rem, 1.5rem, 0rem;
-  li {
-    display: inline;
-    padding-right: 20px;
-    font-family: $main-typeface; 
-    font-weight: 300; 
-    color: $type-color;
-    font-size: .8rem;
-  }
-}
-
-ul.glucose-list {
-  list-style-type: none;
-  margin-bottom: 0px;
-  margin-left: 0px;
-  li {
-    display: inline;
-    padding-right: 20px;
-    font-family: $main-typeface; 
-    font-weight: 300; 
-    color: $type-color;
-    font-size: .8rem;
-  }
 }
 
 $tabs-navigation-font-family: $main-typeface;
