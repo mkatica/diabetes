@@ -8,6 +8,20 @@ $main-typeface: 'Lato', 'Helvetica', 'Sans Serif';
   width: 80%;
 }
 
+/**** messages riffing ****/
+
+.message-body {
+  height: 800px;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.sandyone-body {
+  width: 100%;
+  display: none;
+}
+
+
 .barback {
   background-color: #5CDBD5;
   margin-top: 15px;

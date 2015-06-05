@@ -36,6 +36,8 @@
       </div>
     </div>
     <div class="row">
+      
+      <!-- my messages nav -->
       <div class="small-12 columns">
         <div class "row">
           <div class="small-2 columns">
@@ -57,33 +59,51 @@
           </div>
         </div>
       </div>
+
+      <!-- actual message list -->
       <div class="small-12 columns">
-        <div class="panel">
-          <table>
-            <tbody>
-              <tr>
-                <td>SandyRN</td>
-                <td>RE: High morning glucose</td>
-                <td>April 14</td>
-              </tr>
-              <tr>
-                <td>SandyRN</td>
-                <td>Great progress!</td>
-                <td>April 2</td>
-              </tr>
-              <tr>
-                <td>SandyRN</td>
-                <td>Lab Results</td>
-                <td>Jan 20</td>
-              </tr>
-              <tr>
-                <td>SandyRN</td>
-                <td>Lab Reminder</td>
-                <td>Jan 18</td>
-              </tr>
-            </tbody>
-          </table>
-          <ul class="tabs vertical" data-tab>
+        <div class="row">
+          <div class="small-6 columns">
+            <div class="panel">
+              <table>
+                <tbody>
+                  <tr id="sandyone">
+                    <td>SandyRN</td>
+                    <td>RE: High morning glucose</td>
+                    <td>April 14</td>
+                  </tr>
+                  <tr>
+                    <td>SandyRN</td>
+                    <td>Great progress!</td>
+                    <td>April 2</td>
+                  </tr>
+                  <tr>
+                    <td>SandyRN</td>
+                    <td>Lab Results</td>
+                    <td>Jan 20</td>
+                  </tr>
+                  <tr>
+                    <td>SandyRN</td>
+                    <td>Lab Reminder</td>
+                    <td>Jan 18</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="small-6 columns">
+            <div class="message-body">
+<!--               <p>some message stuff goes in here</p>
+ -->              <p class="sandyone-body">
+                This is test content.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+          <!-- mail tab approach -->
+<!--           <ul class="tabs vertical" data-tab>
             <li class="tab-title active"><a href="#panel11">
               <ul class="messages-preview">
                 <li><a href="">SandyRN</a></li>
@@ -114,7 +134,7 @@
             <div class="content" id="panel41">
               <p>This is the fourth panel of the basic tab example. This is the fourth panel of the basic tab example.</p>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     <footer class="row">
@@ -126,5 +146,17 @@
     <script src="bower_components/foundation/js/foundation.min.js"></script>
     <script src="js/chart.js"></script>
     <script src="js/app.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $("#sandyone").click(function(){
+          // $(".message-body").empty();
+          $(".sandyone-body").css($("display","inline"));
+
+          console.log('working');
+          // $(this).show();
+        });
+      });
+    </script>
   </body>
 </html>
