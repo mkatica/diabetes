@@ -188,6 +188,7 @@ h6, .panel h6 {
   font-weight: 100;
   text-align: left;
   line-height: 1rem;
+  margin-bottom: 1.3rem;
 }
 
 .panel h2 {
@@ -239,6 +240,8 @@ h3.no-margin{
 }
 
 
+
+
 /*STRUCTURE*/
 
 body {
@@ -267,16 +270,27 @@ body {
   h5.italic-date {
     margin-bottom: .7rem;
   }
+  h5.pink {
+    color: #EE5876;
+  }   
 }
 
 .care-plan {
-  height:240px;
+  height:230px;
   h3.small-header {
-    text-align: left;
     text-transform: none;
+    text-align: left;
     font-weight: 300;
-    margin-top: -6px;
-    margin-bottom: 10px;
+    margin: -4px 0px 12px 48px;
+    font-style: italic;
+    font-size: .8rem;
+  }
+  img {
+    float: left;
+    margin-right: 8px;
+    margin-top: 0px;
+    height: 40px;
+    width: 40px;
   }
 }
 
