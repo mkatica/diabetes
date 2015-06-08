@@ -182,6 +182,14 @@ h5 {
   text-align: left;
 }
 
+h6, .panel h6 {
+  font: .8em $main-typeface;
+  color: $type-color;
+  font-weight: 100;
+  text-align: left;
+  line-height: 1rem;
+}
+
 .panel h2 {
   font: 4em $main-typeface;
   color: #0A625C;
@@ -261,9 +269,16 @@ body {
   }
 }
 
-/*.synced-apps-padding {
-  padding-left: .4rem;
-}*/
+.care-plan {
+  height:240px;
+  h3.small-header {
+    text-align: left;
+    text-transform: none;
+    font-weight: 300;
+    margin-top: -6px;
+    margin-bottom: 10px;
+  }
+}
 
 .left-column {
   padding-left: 0rem;
@@ -306,6 +321,8 @@ a.button.expand {
   background-color: #FFF;
   color: #71655D;
   border-radius: 3px;
+  font: .8em $main-typeface;
+  font-weight: 300;
 }
 
 a.button.expand:hover {
@@ -349,6 +366,10 @@ a.care-team-button {
 
 .switch input:checked + label {
   background: #18A19A;
+}
+
+.switch label {
+  background: rgba(113,101,93, 0.3);
 }
 
 .messages-button {
