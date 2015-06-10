@@ -56,11 +56,11 @@ var myLineChart = new Chart(glucoseTotal).Line(weeklyGlucoseTotals, chartOptions
 var dailyExerciseGoal = [
   {
     value: 10,
-    color:"#4eddc1"
+    color:"#18A19A"
   },
   {
     value : 20,
-    color : "#E2EAE9"
+    color : "#5CDBD5"
   }
 ]
 var options = {

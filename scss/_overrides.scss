@@ -239,6 +239,23 @@ h3.no-margin{
   } 
 }
 
+h2.exercise {
+  position: relative;
+  top:-125px;
+  text-align: center;
+  margin:0 auto;
+  display:block;
+  height:0;
+}
+
+h1.food-log {
+  display: inline-block;
+  margin-right: 8rem;
+}
+
+h5.float-right {
+  display:inline-block;
+}
 
 
 
@@ -304,6 +321,18 @@ body {
   padding-right: 0rem;
 }
 
+.exercise-column, .food-column {
+  padding-left: .7rem;
+}
+
+.messages-column, .food-column {
+  padding-right: .7rem;
+}
+
+.messages-column {
+  padding-left: 15px;
+}
+
 .care-team-names {
   margin-bottom: 1.2rem;
 }
@@ -333,10 +362,11 @@ a.tiny.button:hover {
 
 a.button.expand {
   background-color: #FFF;
-  color: #71655D;
+  color: #18A19A;
   border-radius: 3px;
   font: .8em $main-typeface;
-  font-weight: 300;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 
 a.button.expand:hover {
@@ -364,7 +394,6 @@ a.view-details-button {
 .care-team-button {
   border: 1px solid #A79C95;
   padding: 4px 10px;
-/*  margin-bottom: 20px;*/
   border-radius: 3px;
   font-size: .8em
 }
@@ -373,10 +402,6 @@ a.care-team-button {
   color:$type-color;
   font-weight: 300;
 }
-
-/*a.view-details-button:hover {
-    color:#EE5876;
-}*/
 
 .switch input:checked + label {
   background: #18A19A;
@@ -411,12 +436,39 @@ table {
     }
 }
 
-table.appts tbody tr.even, table.appts tbody tr.alt {
+table.appts tbody tr.even, table.appts tbody tr.alt, table.messages-preview tbody tr.even, table.messages-preview tbody tr.alt  {
   background: #FFF
 }
 
-table.appts tbody tr:nth-child(even) { 
+table.appts tbody tr:nth-child(even), table.messages-preview tbody tr:nth-child(even) { 
   background: #FFF; 
+}
+
+table.messages-preview tr td {
+  padding-top: .6rem;
+  padding-right: 2.7rem;
+  padding-bottom: .6rem;
+}
+
+FORMS
+
+select {
+  border-radius: 2px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #cccccc;
+  border-radius: 2px;
+  padding: 0.5rem;
+  padding-top: 0.5rem;
+  padding-right: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.5rem;
+  font-size: 0.875rem;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  color: rgba(0, 0, 0, 0.75);
+  line-height: normal;
+  border-radius: 0;
+  height: 2.3125rem;
 }
 
 /*TABS*/

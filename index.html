@@ -38,7 +38,7 @@
     <div class="row">
       <div class="large-12 columns">
         <h1 class="top-header">My Dashboard</h1>
-        <div class="large-9 columns">
+        <div class="large-9 columns left-column">
           <div class ="panel">
             <div class="button-bar">
               <ul class="button-group radius">
@@ -53,7 +53,7 @@
           <canvas id="glucoseTotal" height="318" width="650px"></canvas>
         </div>
       </div>
-      <div class="large-3 columns" id="glucose-weekly">
+      <div class="large-3 columns right-column" id="glucose-weekly">
         <div class="panel">
         <h2>123</h2>
           <div class="barback">
@@ -64,7 +64,7 @@
           <h4>Glucose Level</h4>
         </div>
       </div>
-      <div class="large-3 columns" id="glucose-monthly">
+      <div class="large-3 columns right-column" id="glucose-monthly">
         <div class="panel">
           <h2>132</h2>
           <div class="barback">
@@ -76,10 +76,10 @@
         </div>
       </div>
     <div class="row">
-      <div class="large-6 columns">
+      <div class="large-6 columns messages-column">
         <h1>My Messages</h1>
         <div class="panel">
-          <table>
+          <table class="messages-preview">
             <tbody>
               <tr>
                 <td>SandyRN</td>
@@ -105,10 +105,11 @@
           </table>
         </div>
       </div>
-      <div class="large-6 columns">
-        <h1>Food Log and Exercise</h1>
+      <div class="large-6 columns right-column">
+        <h1 class="food-log">Food Log and Exercise</h1>
+        <h5 class="italic-date float-right">Synced today, 6:46pm </h5>
         <div class="row">
-          <div class="small-6 columns" id="carb-count">
+          <div class="small-6 columns food-column" id="carb-count">
             <div class="panel">
               <h2>7</h2>
                 <div class="barback">
@@ -126,10 +127,11 @@
                 <a class="close-reveal-modal" aria-label="Close">&#215;</a>
               </div>
             </div> 
-          <div class="small-6 columns">
+          <div class="small-6 columns exercise-column">
             <div class="panel">
               <canvas id="dailyExerciseGoal" height="100px" width="100px"></canvas>
-              <h3>Exercise Today</h3>
+              <h2 class="exercise">10</h2>
+              <h3>Minutes of Exercise</h3>
               <h4><i>Synced with Fitbit</i></h4>
             </div>
             <a href="#" class="button expand">Add Exercise</a>
