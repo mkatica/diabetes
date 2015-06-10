@@ -9532,19 +9532,20 @@ body {
   padding-right: 0rem;
 }
 
-/* line 332, ../scss/_overrides.scss */
+/* line 331, ../scss/_overrides.scss */
 .exercise-column, .food-column {
   padding-left: .7rem;
 }
 
-/* line 336, ../scss/_overrides.scss */
-.messages-column, .food-column {
+/* line 335, ../scss/_overrides.scss */
+.food-column {
   padding-right: .7rem;
 }
 
-/* line 340, ../scss/_overrides.scss */
+/* line 339, ../scss/_overrides.scss */
 .messages-column {
   padding-left: 15px;
+  padding-right: .7rem;
 }
 
 /* line 344, ../scss/_overrides.scss */
@@ -9720,13 +9721,28 @@ table.appts tbody tr:nth-child(even), table.messages-preview tbody tr:nth-child(
 
 /* line 492, ../scss/_overrides.scss */
 table.messages-preview tr td {
-  padding-top: .6rem;
+  padding-top: .8rem;
   padding-right: 2.7rem;
-  padding-bottom: .6rem;
+  padding-bottom: .8rem;
+  font-size: .8rem;
+}
+
+/* line 499, ../scss/_overrides.scss */
+.messages-preview {
+  height: 228px;
+}
+/* line 501, ../scss/_overrides.scss */
+.messages-preview tr:hover, .messages-preview tr.even:hover {
+  background: rgba(113, 101, 93, 0.1);
+}
+/* line 504, ../scss/_overrides.scss */
+.messages-preview td a {
+  display: block;
+  color: #71655D;
 }
 
 /*FORMS*/
-/* line 500, ../scss/_overrides.scss */
+/* line 511, ../scss/_overrides.scss */
 select, input[type="text"], input[type="checkbox"] + label, input[type="radio"] + label {
   border-color: rgba(113, 101, 93, 0.4);
   font-size: 0.8rem;
@@ -9737,13 +9753,13 @@ select, input[type="text"], input[type="checkbox"] + label, input[type="radio"] 
 }
 
 /*TABS*/
-/* line 511, ../scss/_overrides.scss */
+/* line 522, ../scss/_overrides.scss */
 .tabs.vertical {
   width: 50%;
   max-width: 50%;
 }
 
-/* line 516, ../scss/_overrides.scss */
+/* line 527, ../scss/_overrides.scss */
 .tabs .tab-title > a {
   font-family: "Lato", "Helvetica", "Sans Serif";
   font-weight: 300;
@@ -9751,13 +9767,13 @@ select, input[type="text"], input[type="checkbox"] + label, input[type="radio"] 
   font-size: .8rem;
 }
 
-/* line 526, ../scss/_overrides.scss */
+/* line 537, ../scss/_overrides.scss */
 canvas {
   width: 100% !important;
   height: auto !important;
 }
 
-/* line 531, ../scss/_overrides.scss */
+/* line 542, ../scss/_overrides.scss */
 .exercise {
   background-color: #FFF;
   font: 0.5em "Lato", "Helvetica", "Sans Serif";

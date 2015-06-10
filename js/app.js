@@ -70,3 +70,8 @@ var thisWeek = $("#dailyExerciseGoal").get(0).getContext("2d");
 var myWeeklyGoal = new Chart(thisWeek).Doughnut(dailyExerciseGoal, options);
 
 
+$(document).ready(function(){
+    $('table tr').click(function(){
+        window.location = $(this).attr('href');
+    });
+});

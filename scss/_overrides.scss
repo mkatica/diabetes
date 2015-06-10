@@ -328,17 +328,17 @@ body {
   padding-left: .7rem;
   padding-right: 0rem;
 }
-
 .exercise-column, .food-column {
   padding-left: .7rem;
 }
 
-.messages-column, .food-column {
+.food-column {
   padding-right: .7rem;
 }
 
 .messages-column {
   padding-left: 15px;
+  padding-right: .7rem;
 }
 
 .care-team-names {
@@ -490,11 +490,22 @@ table.appts tbody tr:nth-child(even), table.messages-preview tbody tr:nth-child(
 }
 
 table.messages-preview tr td {
-  padding-top: .6rem;
+  padding-top: .8rem;
   padding-right: 2.7rem;
-  padding-bottom: .6rem;
+  padding-bottom: .8rem;
+  font-size: .8rem;
 }
 
+.messages-preview {
+  height: 228px;
+  tr:hover, tr.even:hover { 
+   background: rgba(113,101,93, 0.1); 
+  }
+  td a { 
+   display: block; 
+   color: $type-color;
+  }
+}
 /*FORMS*/
 
 select, input[type="text"], input[type="checkbox"] + label, input[type="radio"] + label {
