@@ -121,9 +121,60 @@
             </div>
             <a href="#" class="button expand" data-reveal-id="myModal">Add Meal</a>
               <div id="myModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
-                <h2 id="modalTitle">Add Meal</h2>
-<!--                 <p class="lead">Your couch.  It is mine.</p>
-                <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p> -->
+                  <div class="large-12 columns">                
+                    <h1>Add Meal</h1>
+                  </div>
+                  <form>
+                    <div class="row">
+                      <div class="large-6 columns">
+                        <label class="label-header">Date
+                          <select>
+                            <option value="husker">April 13</option>
+                            <option value="starbuck">April 14</option>
+                            <option value="hotdog">April 15</option>
+                            <option value="apollo">April 16</option>
+                          </select>
+                        </label>
+                      </div>
+                      <div class="large-6 columns">
+                        <label class="label-header">Meal
+                          <select>
+                            <option value="husker">Breakfast</option>
+                            <option value="starbuck">Lunch</option>
+                            <option value="hotdog">Dinner</option>
+                            <option value="apollo">Snack</option>
+                          </select>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="large-12 columns">
+                      <label class="label-header">Search
+                      <div class="row collapse">
+                        <div class="small-10 columns">
+                          <input type="text" placeholder="Keywords">
+                        </div>
+                        <div class="small-2 columns">
+                          <a href="#" class="button postfix">Search</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="large-12 columns">
+                        <label class= "label-header">Recent Meals</label>
+                        <div class="large-6 columns no-padding">
+                          <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Fage Greek Yogurt</label>
+                          <br>
+                          <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Coffee with Cream and Sugar</label>
+                        </div>
+                        <div class="large-6 columns">
+                          <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Egg Salad Sandwich</label>
+                          <br>
+                          <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Breakfast Burrito</label>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="#" class="small button radius">Submit</a>
+                  </form>
                 <a class="close-reveal-modal" aria-label="Close">&#215;</a>
               </div>
             </div> 

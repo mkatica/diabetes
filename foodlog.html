@@ -54,12 +54,12 @@
       </div>
       <div class="row">
         <div class="large-6 columns">
+          <h3 class="text-align-left header">Add Meal</h3>
           <div class ="panel">
-            <h3 class="text-align-left">Add a meal</h3>
             <form>
               <div class="row">
                 <div class="large-6 columns">
-                  <label>Date
+                  <label class="label-header">Date
                     <select>
                       <option value="husker">April 13</option>
                       <option value="starbuck">April 14</option>
@@ -69,7 +69,7 @@
                   </label>
                 </div>
                 <div class="large-6 columns">
-                  <label>Meal
+                  <label class="label-header">Meal
                     <select>
                       <option value="husker">Breakfast</option>
                       <option value="starbuck">Lunch</option>
@@ -79,8 +79,8 @@
                   </label>
                 </div>
               </div>
-              <div class="large-12 columns">
-                <label>Search
+              <div class="large-12 columns no-padding">
+                <label class="label-header">Search
                 <div class="row collapse">
                   <div class="small-10 columns">
                     <input type="text" placeholder="Keywords">
@@ -92,18 +92,25 @@
               </div>
               <div class="row">
                 <div class="large-12 columns">
-                  <label>Recent Meals</label>
-                  <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Fage Greek Yogurt</label>
-                  <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Coffee with Cream and Sugar</label>
-                  <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Egg Salad Sandwich</label>
-                  <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Breakfast Burrito</label>
+                  <label class= "label-header">Recent Meals</label>
+                  <div class="large-6 columns no-padding">
+                    <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Fage Greek Yogurt</label>
+                    <br>
+                    <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Coffee with Cream and Sugar</label>
+                  </div>
+                  <div class="large-6 columns">
+                    <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Egg Salad Sandwich</label>
+                    <br>
+                    <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Breakfast Burrito</label>
+                  </div>
                 </div>
               </div>
             </form>
+            <a href="#" class="small button radius">Submit</a>
           </div>
-          <a href="#" class="button expand">Save</a>
         </div>
         <div class="large-6 columns">
+          <h3 class="text-align-left header">Meal Log</h3>
           <div class ="panel">
             <h3 class="text-align-left header">April 15, 2015</h3>
               <ul class="glucose-list">

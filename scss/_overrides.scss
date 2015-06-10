@@ -197,7 +197,7 @@ h6, .panel h6 {
   font-weight: 300; 
 }
 
-.panel h3, .panel-appts h3 {
+h3, .panel h3, .panel-appts h3 {
   font: 1em $main-typeface;
   color: $type-color;
   text-transform: uppercase;
@@ -221,7 +221,7 @@ h3.text-align-left {
 }
 
 h3.header {
-  padding-top:1.5rem;
+  margin-top:1rem;
   margin-bottom:1rem;
 }
 
@@ -229,9 +229,10 @@ h3.no-margin{
   margin-bottom: .3rem;
 }
 
-.italic-date {
+.italic-date, footer p {
   font-style: italic;
   font-weight: 100;
+  color: $type-color;
   font-size: .7em;
   line-height: .6em;
   td {
@@ -257,6 +258,13 @@ h5.float-right {
   display:inline-block;
 }
 
+label.label-header {
+  font: .8em $main-typeface;
+  color: $type-color;
+  text-transform: uppercase;
+  line-height: 2.5;
+  font-weight: 300;
+}
 
 
 /*STRUCTURE*/
@@ -337,6 +345,11 @@ body {
   margin-bottom: 1.2rem;
 }
 
+.no-padding {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 .left {
   display: table-cell;
   vertical-align: middle;
@@ -348,16 +361,35 @@ body {
   text-align: right;
 }
 
+footer {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  p {
+    line-height: 0px;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+}
+
 /*BUTTONS*/
 
-a.tiny.button {
+a.tiny.button, a.small.button.radius {
   background-color: $primary-color;
+  color: #fff;
+  font-family: $main-typeface;
+  font-weight: 300;
+}
+
+a.tiny.button:hover, a.small.button:hover {
+  background-color: $secondary-color;
   color: #fff;
 }
 
-a.tiny.button:hover {
-  background-color: $secondary-color;
-  color: #fff;
+a.small.button.radius {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
 }
 
 a.button.expand {
@@ -419,6 +451,19 @@ a.care-team-button {
   font-size: .8em
 }
 
+.postfix.button {
+  background-color: $primary-color;
+  color: #fff;
+  font-family: $main-typeface;
+  font-size: .8rem;
+  font-weight: 300;
+  text-transform: none;
+  &:hover {
+  background: darken($primary-color, 15%)
+  }
+}
+
+
 /*TABLE*/
 
 table {
@@ -450,25 +495,15 @@ table.messages-preview tr td {
   padding-bottom: .6rem;
 }
 
-FORMS
+/*FORMS*/
 
-select {
-  border-radius: 2px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #cccccc;
-  border-radius: 2px;
-  padding: 0.5rem;
-  padding-top: 0.5rem;
-  padding-right: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 0.5rem;
-  font-size: 0.875rem;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  color: rgba(0, 0, 0, 0.75);
-  line-height: normal;
-  border-radius: 0;
-  height: 2.3125rem;
+select, input[type="text"], input[type="checkbox"] + label, input[type="radio"] + label {
+  border-color: rgba(113,101,93, 0.4);
+  font-size: 0.8rem;
+  background-color: #FFF;
+  font-family: $main-typeface;
+  font-weight: 300;
+  color: #71655D;
 }
 
 /*TABS*/
