@@ -9747,22 +9747,40 @@ table.messages-preview tr td {
   color: #71655D;
 }
 
-/* line 515, ../scss/_overrides.scss */
+/* line 519, ../scss/_overrides.scss */
 .accordion .accordion-navigation > a, .accordion dd > a {
   font-family: "Lato", "Helvetica", "Sans Serif";
   background: #FFF;
   font-size: .8rem;
   font-weight: 300;
   color: #71655D;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
-/* line 523, ../scss/_overrides.scss */
-.accordion .accordion-navigation.active > a {
+/*.accordion-navigation:hover {
   background: red;
 }
 
+li.accordion-navigation:hover {
+  background: #000;
+}
+
+ul.li.accordion:hover {
+  background: red;
+}*/
+/* line 541, ../scss/_overrides.scss */
+.accordion li.accordion-navigation:hover {
+  background: #FFF;
+}
+
+/* line 545, ../scss/_overrides.scss */
+.accordion .accordion-navigation.active > a {
+  background: #FFF;
+}
+
 /*FORMS*/
-/* line 529, ../scss/_overrides.scss */
+/* line 551, ../scss/_overrides.scss */
 select, input[type="text"], input[type="checkbox"] + label, input[type="radio"] + label, textarea {
   border-color: rgba(113, 101, 93, 0.4);
   font-size: 0.8rem;
@@ -9773,13 +9791,13 @@ select, input[type="text"], input[type="checkbox"] + label, input[type="radio"] 
 }
 
 /*TABS*/
-/* line 540, ../scss/_overrides.scss */
+/* line 562, ../scss/_overrides.scss */
 .tabs.vertical {
   width: 50%;
   max-width: 50%;
 }
 
-/* line 545, ../scss/_overrides.scss */
+/* line 567, ../scss/_overrides.scss */
 .tabs .tab-title > a {
   font-family: "Lato", "Helvetica", "Sans Serif";
   font-weight: 300;
@@ -9787,13 +9805,13 @@ select, input[type="text"], input[type="checkbox"] + label, input[type="radio"] 
   font-size: .8rem;
 }
 
-/* line 555, ../scss/_overrides.scss */
+/* line 577, ../scss/_overrides.scss */
 canvas {
   width: 100% !important;
   height: auto !important;
 }
 
-/* line 560, ../scss/_overrides.scss */
+/* line 582, ../scss/_overrides.scss */
 .exercise {
   background-color: #FFF;
   font: 0.5em "Lato", "Helvetica", "Sans Serif";

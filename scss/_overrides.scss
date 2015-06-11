@@ -512,16 +512,38 @@ table.messages-preview tr td {
   }
 }
 
+
+$accordion-navigation-hover-bg-color: rgba(113,101,93,0.1);
+$accordion-navigation-active-bg-color: #FFF;
+
 .accordion .accordion-navigation > a, .accordion dd > a {
   font-family: $main-typeface;
   background: #FFF;
   font-size: .8rem;
   font-weight: 300;
   color: $type-color;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
-.accordion .accordion-navigation.active > a {
+/*.accordion-navigation:hover {
   background: red;
+}
+
+li.accordion-navigation:hover {
+  background: #000;
+}
+
+ul.li.accordion:hover {
+  background: red;
+}*/
+
+.accordion li.accordion-navigation:hover {
+  background: #FFF;
+}
+
+.accordion .accordion-navigation.active > a, {
+  background: #FFF;
 }
 
 /*FORMS*/
