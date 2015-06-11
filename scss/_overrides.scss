@@ -16,10 +16,10 @@ $main-typeface: 'Lato', 'Helvetica', 'Sans Serif';
   padding: 20px;
 }
 
-.sandyone-body {
+#sandyone-body, #sandytwo-body {
   width: 100%;
-/*  display: none;
-*/}
+  display: none;
+}
 
 
 .barback {

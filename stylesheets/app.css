@@ -9172,10 +9172,9 @@ th.hide-for-touch {
 }
 
 /* line 19, ../scss/_overrides.scss */
-.sandyone-body {
+#sandyone-body, #sandytwo-body {
   width: 100%;
-  /*  display: none;
-  */
+  display: none;
 }
 
 /* line 25, ../scss/_overrides.scss */
