@@ -361,6 +361,11 @@ body {
   text-align: right;
 }
 
+.comments-glucose-levels {
+  padding-left: 15px; 
+  padding-right: 15px;
+}
+
 footer {
   margin-top: 1rem;
   margin-bottom: 2rem;
@@ -506,9 +511,22 @@ table.messages-preview tr td {
    color: $type-color;
   }
 }
+
+.accordion .accordion-navigation > a, .accordion dd > a {
+  font-family: $main-typeface;
+  background: #FFF;
+  font-size: .8rem;
+  font-weight: 300;
+  color: $type-color;
+}
+
+.accordion .accordion-navigation.active > a {
+  background: red;
+}
+
 /*FORMS*/
 
-select, input[type="text"], input[type="checkbox"] + label, input[type="radio"] + label {
+select, input[type="text"], input[type="checkbox"] + label, input[type="radio"] + label, textarea {
   border-color: rgba(113,101,93, 0.4);
   font-size: 0.8rem;
   background-color: #FFF;

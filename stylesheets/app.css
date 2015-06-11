@@ -9573,11 +9573,17 @@ body {
 }
 
 /* line 364, ../scss/_overrides.scss */
+.comments-glucose-levels {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* line 369, ../scss/_overrides.scss */
 footer {
   margin-top: 1rem;
   margin-bottom: 2rem;
 }
-/* line 367, ../scss/_overrides.scss */
+/* line 372, ../scss/_overrides.scss */
 footer p {
   line-height: 0px;
   padding-top: 2rem;
@@ -9585,7 +9591,7 @@ footer p {
 }
 
 /*BUTTONS*/
-/* line 376, ../scss/_overrides.scss */
+/* line 381, ../scss/_overrides.scss */
 a.tiny.button, a.small.button.radius {
   background-color: #18A19A;
   color: #fff;
@@ -9593,13 +9599,13 @@ a.tiny.button, a.small.button.radius {
   font-weight: 300;
 }
 
-/* line 383, ../scss/_overrides.scss */
+/* line 388, ../scss/_overrides.scss */
 a.tiny.button:hover, a.small.button:hover {
   background-color: #0A625C;
   color: #fff;
 }
 
-/* line 388, ../scss/_overrides.scss */
+/* line 393, ../scss/_overrides.scss */
 a.small.button.radius {
   padding-top: 8px;
   padding-bottom: 8px;
@@ -9607,7 +9613,7 @@ a.small.button.radius {
   margin-bottom: .5rem;
 }
 
-/* line 395, ../scss/_overrides.scss */
+/* line 400, ../scss/_overrides.scss */
 a.button.expand {
   background-color: #FFF;
   color: #18A19A;
@@ -9617,18 +9623,18 @@ a.button.expand {
   text-transform: uppercase;
 }
 
-/* line 404, ../scss/_overrides.scss */
+/* line 409, ../scss/_overrides.scss */
 a.button.expand:hover {
   background: rgba(113, 101, 93, 0.1);
   border-radius: 3px;
 }
 
-/* line 409, ../scss/_overrides.scss */
+/* line 414, ../scss/_overrides.scss */
 .button-bar .button-group {
   float: right;
 }
 
-/* line 413, ../scss/_overrides.scss */
+/* line 418, ../scss/_overrides.scss */
 .view-details-button {
   float: right;
   border: 1px solid #A79C95;
@@ -9638,12 +9644,12 @@ a.button.expand:hover {
   font-size: 0.8em;
 }
 
-/* line 422, ../scss/_overrides.scss */
+/* line 427, ../scss/_overrides.scss */
 a.view-details-button {
   color: #71655D;
 }
 
-/* line 426, ../scss/_overrides.scss */
+/* line 431, ../scss/_overrides.scss */
 .care-team-button {
   border: 1px solid #A79C95;
   padding: 4px 10px;
@@ -9651,23 +9657,23 @@ a.view-details-button {
   font-size: 0.8em;
 }
 
-/* line 433, ../scss/_overrides.scss */
+/* line 438, ../scss/_overrides.scss */
 a.care-team-button {
   color: #71655D;
   font-weight: 300;
 }
 
-/* line 438, ../scss/_overrides.scss */
+/* line 443, ../scss/_overrides.scss */
 .switch input:checked + label {
   background: #18A19A;
 }
 
-/* line 442, ../scss/_overrides.scss */
+/* line 447, ../scss/_overrides.scss */
 .switch label {
   background: rgba(113, 101, 93, 0.3);
 }
 
-/* line 446, ../scss/_overrides.scss */
+/* line 451, ../scss/_overrides.scss */
 .messages-button {
   border: 1px solid #A79C95;
   padding: 6px 10px;
@@ -9676,7 +9682,7 @@ a.care-team-button {
   font-size: 0.8em;
 }
 
-/* line 454, ../scss/_overrides.scss */
+/* line 459, ../scss/_overrides.scss */
 .postfix.button {
   background-color: #18A19A;
   color: #fff;
@@ -9685,41 +9691,41 @@ a.care-team-button {
   font-weight: 300;
   text-transform: none;
 }
-/* line 461, ../scss/_overrides.scss */
+/* line 466, ../scss/_overrides.scss */
 .postfix.button:hover {
   background: #0e5e5a;
 }
 
 /*TABLE*/
-/* line 469, ../scss/_overrides.scss */
+/* line 474, ../scss/_overrides.scss */
 table {
   border-collapse: collapse;
   border-style: hidden;
   width: 100%;
 }
-/* line 473, ../scss/_overrides.scss */
+/* line 478, ../scss/_overrides.scss */
 table tr th, table tr td, table thead tr th, table tbody tr th, table tbody tr td, table table tr td {
   font-family: "Lato", "Helvetica", "Sans Serif";
   font-weight: 300;
   color: #71655D;
   padding: 0px;
 }
-/* line 479, ../scss/_overrides.scss */
+/* line 484, ../scss/_overrides.scss */
 table tr, table th {
   border: 1px solid #A79C95;
 }
 
-/* line 484, ../scss/_overrides.scss */
+/* line 489, ../scss/_overrides.scss */
 table.appts tbody tr.even, table.appts tbody tr.alt, table.messages-preview tbody tr.even, table.messages-preview tbody tr.alt {
   background: #FFF;
 }
 
-/* line 488, ../scss/_overrides.scss */
+/* line 493, ../scss/_overrides.scss */
 table.appts tbody tr:nth-child(even), table.messages-preview tbody tr:nth-child(even) {
   background: #FFF;
 }
 
-/* line 492, ../scss/_overrides.scss */
+/* line 497, ../scss/_overrides.scss */
 table.messages-preview tr td {
   padding-top: .8rem;
   padding-right: 2.7rem;
@@ -9727,23 +9733,37 @@ table.messages-preview tr td {
   font-size: .8rem;
 }
 
-/* line 499, ../scss/_overrides.scss */
+/* line 504, ../scss/_overrides.scss */
 .messages-preview {
   height: 228px;
 }
-/* line 501, ../scss/_overrides.scss */
+/* line 506, ../scss/_overrides.scss */
 .messages-preview tr:hover, .messages-preview tr.even:hover {
   background: rgba(113, 101, 93, 0.1);
 }
-/* line 504, ../scss/_overrides.scss */
+/* line 509, ../scss/_overrides.scss */
 .messages-preview td a {
   display: block;
   color: #71655D;
 }
 
+/* line 515, ../scss/_overrides.scss */
+.accordion .accordion-navigation > a, .accordion dd > a {
+  font-family: "Lato", "Helvetica", "Sans Serif";
+  background: #FFF;
+  font-size: .8rem;
+  font-weight: 300;
+  color: #71655D;
+}
+
+/* line 523, ../scss/_overrides.scss */
+.accordion .accordion-navigation.active > a {
+  background: red;
+}
+
 /*FORMS*/
-/* line 511, ../scss/_overrides.scss */
-select, input[type="text"], input[type="checkbox"] + label, input[type="radio"] + label {
+/* line 529, ../scss/_overrides.scss */
+select, input[type="text"], input[type="checkbox"] + label, input[type="radio"] + label, textarea {
   border-color: rgba(113, 101, 93, 0.4);
   font-size: 0.8rem;
   background-color: #FFF;
@@ -9753,13 +9773,13 @@ select, input[type="text"], input[type="checkbox"] + label, input[type="radio"] 
 }
 
 /*TABS*/
-/* line 522, ../scss/_overrides.scss */
+/* line 540, ../scss/_overrides.scss */
 .tabs.vertical {
   width: 50%;
   max-width: 50%;
 }
 
-/* line 527, ../scss/_overrides.scss */
+/* line 545, ../scss/_overrides.scss */
 .tabs .tab-title > a {
   font-family: "Lato", "Helvetica", "Sans Serif";
   font-weight: 300;
@@ -9767,13 +9787,13 @@ select, input[type="text"], input[type="checkbox"] + label, input[type="radio"] 
   font-size: .8rem;
 }
 
-/* line 537, ../scss/_overrides.scss */
+/* line 555, ../scss/_overrides.scss */
 canvas {
   width: 100% !important;
   height: auto !important;
 }
 
-/* line 542, ../scss/_overrides.scss */
+/* line 560, ../scss/_overrides.scss */
 .exercise {
   background-color: #FFF;
   font: 0.5em "Lato", "Helvetica", "Sans Serif";

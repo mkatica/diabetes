@@ -41,7 +41,7 @@
         <div class="large-6 columns">
           <div class ="panel">
             <h3 class="text-align-left header">April 15, 2015</h3>
-              <ul class="glucose-list">
+<!--               <ul class="glucose-list">
                   <li><a href="">7:13am</a></li>
                   <li><a href="">123 mg/dl</a></li>
                   <li><a href="#" class="tiny button radius">Add Note</a></li>
@@ -55,18 +55,166 @@
                   <li><a href="">11:48am</a></li>
                   <li><a href="">133 mg/dl</a></li>
                   <li><a href="#" class="tiny button radius">Add Note</a></li>
-              </ul>
-            <!-- <ul class="accordion" data-accordion>
+              </ul> -->
+            <ul class="glucose-list accordion" data-accordion>
               <li class="accordion-navigation">
-                <a href="#panel1a">Accordion 1</a>
-                <div id="panel1a" class="content active">
-                  Panel 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                <a href="#panel1a">
+                  <table>
+                    <tr>
+                      <td>7:13am </td>
+                      <td>123 mg/dl </td>
+                      <td><a href="#" class="tiny button radius">Add Note</a></td>
+                    </tr>
+                  </table>
+                </a>
+                <div id="panel1a" class="content">
+                  <form>
+                    <div class="row">
+                      <div class="large-6 columns">
+                       <label class="label-header">Meal
+                          <select>
+                            <option value="Breakfast">Breakfast</option>
+                            <option value="Lunch">Lunch</option>
+                            <option value="Dinner">Dinner</option>
+                            <option value="Snack">Snack</option>
+                          </select>
+                        </label>
+                      </div>
+                      <div class="large-6 columns">
+                        <label class="label-header">Measured
+                          <select>
+                            <option value="Before Meal">Before Meal</option>
+                            <option value="After Meal">After Meal</option>
+                          </select>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="large-6 columns">
+                       <label class="label-header">Insulin Units Taken
+                          <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                          </select>
+                        </label>
+                      </div>
+                      <div class="large-6 columns">
+                        <label class="label-header">Carbs at Meal
+                          <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                          </select>
+                        </label>
+                      </div>
+                      <div class="row">
+                        <div class="large-12 columns comments-glucose-levels">
+                          <label class="label-header">Comments
+                            <textarea placeholder="Add any notes or comments"></textarea>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                  <a href="#" class="small button radius">Submit</a>
                 </div>
               </li>
               <li class="accordion-navigation">
-                <a href="#panel2a">Accordion 2</a>
+                <a href="#panel2a">
+                  <table>
+                    <tr>
+                      <td>12:05pm </td>
+                      <td>103 mg/dl </td>
+                      <td><a href="#" class="tiny button radius">Add Note</a></td>
+                    </tr>
+                  </table>
+                </a>
                 <div id="panel2a" class="content">
-                  Panel 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  <form>
+                    <div class="row">
+                      <div class="large-6 columns">
+                       <label class="label-header">Meal
+                          <select>
+                            <option value="Breakfast">Breakfast</option>
+                            <option value="Lunch">Lunch</option>
+                            <option value="Dinner">Dinner</option>
+                            <option value="Snack">Snack</option>
+                          </select>
+                        </label>
+                      </div>
+                      <div class="large-6 columns">
+                        <label class="label-header">Measured
+                          <select>
+                            <option value="Before Meal">Before Meal</option>
+                            <option value="After Meal">After Meal</option>
+                          </select>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="large-6 columns">
+                       <label class="label-header">Insulin Units Taken
+                          <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                          </select>
+                        </label>
+                      </div>
+                      <div class="large-6 columns">
+                        <label class="label-header">Carbs at Meal
+                          <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                          </select>
+                        </label>
+                      </div>
+                      <div class="row">
+                        <div class="large-12 columns comments-glucose-levels">
+                          <label class="label-header">Comments
+                            <textarea placeholder="Add any notes or comments"></textarea>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                  <a href="#" class="small button radius">Submit</a>
                 </div>
               </li>
               <li class="accordion-navigation">
@@ -75,7 +223,7 @@
                   Panel 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </div>
               </li>
-            </ul> -->
+            </ul>
           </div>
         </div>
         <div class="large-6 columns">
