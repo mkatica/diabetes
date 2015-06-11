@@ -242,11 +242,12 @@ h3.no-margin{
 
 h2.exercise {
   position: relative;
-  top:-125px;
+  top:-90px;
   text-align: center;
   margin:0 auto;
   display:block;
   height:0;
+  font-size: 3rem;
 }
 
 h1.food-log {
@@ -298,6 +299,12 @@ body {
   h5.pink {
     color: #EE5876;
   }   
+}
+
+.exercise-panel {
+  height: 120px;
+  width: 120px;
+  margin: 0 auto;
 }
 
 .care-plan {
@@ -445,7 +452,7 @@ a.care-team-button {
 }
 
 .switch label {
-  background: rgba(113,101,93, 0.3);
+  background: rgba(113,101,93,0.3);
 }
 
 .messages-button {
@@ -513,9 +520,6 @@ table.messages-preview tr td {
 }
 
 
-$accordion-navigation-hover-bg-color: rgba(113,101,93,0.1);
-$accordion-navigation-active-bg-color: #FFF;
-
 .accordion .accordion-navigation > a, .accordion dd > a {
   font-family: $main-typeface;
   background: #FFF;
@@ -536,11 +540,15 @@ li.accordion-navigation:hover {
 
 ul.li.accordion:hover {
   background: red;
-}*/
+}
+
+$accordion-navigation-hover-bg-color: rgba(113,101,93,0.1);
+$accordion-navigation-active-bg-color: #FFF;
 
 .accordion li.accordion-navigation:hover {
   background: #FFF;
 }
+*/
 
 .accordion .accordion-navigation.active > a, {
   background: #FFF;
@@ -585,3 +593,4 @@ canvas {
   border-color: #71655D;
   border-radius: 3px;
 }
+
