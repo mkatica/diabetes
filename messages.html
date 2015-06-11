@@ -72,7 +72,7 @@
                     <td>RE: High morning glucose</td>
                     <td>April 14</td>
                   </tr>
-                  <tr>
+                  <tr id="sandytwo">
                     <td>SandyRN</td>
                     <td>Great progress!</td>
                     <td>April 2</td>
@@ -93,11 +93,11 @@
           </div>
           <div class="small-6 columns">
             <div class="message-body">
-<!--               <p>some message stuff goes in here</p>
- -->              <p class="sandyone-body">
-                This is test content.
-              </p>
+              <p>some message stuff goes in here</p>
             </div>
+
+            <p id="sandyone-body">This is test content.</p>
+            <p id="sandytwo-body">This is more test content.</p>
           </div>
         </div>
       </div>
@@ -150,11 +150,17 @@
     <script>
       $(document).ready(function(){
         $("#sandyone").click(function(){
-          // $(".message-body").empty();
-          $(".sandyone-body").css($("display","inline"));
+          $(".message-body").empty().append("#sandyone-body");
+          // $(".sandyone-body").css($("display","inline"));
 
-          console.log('working');
-          // $(this).show();
+          console.log('sandy still here');
+        });
+
+        $("#sandytwo").click(function(){
+          $(".message-body").empty().append("#sandytwo-body");
+          // $(".sandyone-body").css($("display","inline"));
+
+          console.log('sandy now here');
         });
       });
     </script>
