@@ -69,3 +69,41 @@ var options = {
 var thisWeek = $("#dailyExerciseGoal").get(0).getContext("2d");
 var myWeeklyGoal = new Chart(thisWeek).Doughnut(dailyExerciseGoal, options);
 
+
+// var weeklyGlucoseCarbs = {
+//       labels : ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+//       datasets : [
+//         {
+//           fillColor : "rgba(92,219,213,.30)",
+//           // pointDot : false,
+//           data : [20,20,20,20,20,20,20]
+//         },
+//         {
+//           fillColor : "rgba(24,161,154,0.64)",
+//           strokeColor : "rgba(24,161,154,1)",
+//           pointColor : "rgba(24,161,154,1)",
+//           pointStrokeColor : "#fff",
+//           data : [88,103,129,112,120,91,97]
+//         }
+//       ]
+//     }
+//     var chartOptions = {
+//       scaleGridLineColor : "rgba(113,101,93,.1)",
+//       scaleShowVerticalLines: false,
+//       pointDo : true,
+//       scaleFontFamily: "'Lato', Helvetica Neue', 'Helvetica', 'Arial', sans-serif",
+//       scaleFontStyle: "300",
+//       scaleFontColor: "#71655D",
+//     }
+
+// window.onload = function() {
+//     var ctx = document.getElementById("canvas").getContext("2d");
+//     window.myLine = new Chart(ctx).Line(weeklyGlucoseCarbs, {
+//         responsive: true
+//     });
+// }
+
+// var glucoseCarbs = $("#glucoseCarbs").get(0).getContext("2d");
+
+// var myLineChart = new Chart(glucoseCarbs).Line(weeklyGlucoseCarbs, chartOptions);
+

@@ -103,7 +103,7 @@ img.profile-photo {
 
 /*UL*/
 
-ul.alert, ul.messages, ul.messages-preview, ul.glucose-list, ul.glucose-list {
+ul.alert, ul.messages, ul.messages-preview, ul.glucose-list {
   list-style-type: none;
   li {
     display: inline;
@@ -143,6 +143,9 @@ ul.messages-preview, ul.glucose-list {
     font-weight: 300; 
     color: $type-color;
     font-size: .8rem;
+  }
+  a {
+    color: $type-color;
   }
 }
 
@@ -259,7 +262,7 @@ h2.exercise {
 span.float-right {
   display:inline-block;
   float: right;
-  text-transform: inherit;
+  text-transform: capitalize;
 }
 
 label.label-header {
@@ -520,7 +523,7 @@ table.messages-preview, table.appts {
     }
 }
 
-table.accordion-glucose {
+table.accordion-glucose, table.meal-log {
   border-collapse: collapse;
   border-style: solid none none none;
   width: 100%;
@@ -537,11 +540,21 @@ table.accordion-glucose {
     }
 }
 
-table.appts tbody tr.even, table.appts tbody tr.alt, table.messages-preview tbody tr.even, table.messages-preview tbody tr.alt  {
+table.meal-log {
+  tr th, tr td, thead tr th, tbody tr th, tbody tr td, table tr td {
+    font-size: .8rem;
+  }
+  tr, th {
+      border-top: 1px solid #A79C95;
+      border-bottom: 1px solid #A79C95;
+    }
+}
+
+table.appts tbody tr.even, table.appts tbody tr.alt, table.messages-preview tbody tr.even, table.meal-log tbody tr.alt  {
   background: #FFF
 }
 
-table.appts tbody tr:nth-child(even), table.messages-preview tbody tr:nth-child(even) { 
+table.appts tbody tr:nth-child(even), table.messages-preview tbody tr:nth-child(even), table.meal-log tbody tr:nth-child(even)  { 
   background: #FFF; 
 }
 
