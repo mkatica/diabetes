@@ -77,12 +77,12 @@
                     <td>Great progress!</td>
                     <td>April 2</td>
                   </tr>
-                  <tr>
+                  <tr id="sandythree">
                     <td>SandyRN</td>
                     <td>Lab Results</td>
                     <td>Jan 20</td>
                   </tr>
-                  <tr>
+                  <tr id="sandyfour">
                     <td>SandyRN</td>
                     <td>Lab Reminder</td>
                     <td>Jan 18</td>
@@ -93,9 +93,22 @@
           </div>
           <div class="small-6 columns">
             <div class="message-body">
-              <p>some message stuff goes in here</p>
-              <p id="sandyone-body">This is test content.</p>
-              <p id="sandytwo-body">This is more test content.</p>
+              <div class="emails" id="sandyone-body">
+                <h3>This is test content.</h3>
+                <p>dfhjgsdjhfsdghj sdjfgjsd gjhsdhdg jhsdgf jhsdgf sdjfhg sjgj</p>
+              </div>
+              <div class="emails" id="sandytwo-body">
+                <h3>This is test moar test content.</h3>
+                <p>dfhjgsdjhfsdghj sdjfgjsd gjhsdhdg jhsdgf jhsdgf sdjfhg sjgj</p>
+              </div>
+              <div class="emails" id="sandythree-body">
+                <h3>Mary is Awesome.</h3>
+                <p>dfhjgsdjhfsdghj sdjfgjsd gjhsdhdg jhsdgf jhsdgf sdjfhg sjgj</p>
+              </div>
+              <div class="emails" id="sandyfour-body">
+                <h3>Chris is exhausted.</h3>
+                <p>dfhjgsdjhfsdghj sdjfgjsd gjhsdhdg jhsdgf jhsdgf sdjfhg sjgj</p>
+              </div>
             </div>
           </div>
         </div>
@@ -148,18 +161,26 @@
 
     <script>
       $(document).ready(function(){
-        $("#sandyone").click(function(){
-          $("#sandyone-body").css('display', 'block');
-          // $(".sandyone-body").css($("display","inline"));
+        $('.emails').hide();
 
-          console.log('sandy still here');
+        $("#sandyone").click(function(){
+          $('.emails').hide();
+          $("#sandyone-body").show('slow');
         });
 
         $("#sandytwo").click(function(){
-          $("#sandytwo-body").css('display', 'block');
-          // $(".sandyone-body").css($("display","inline"));
+          $('.emails').hide();
+          $("#sandytwo-body").show('slow');
+        });
 
-          console.log('sandy now here');
+        $("#sandythree").click(function(){
+          $('.emails').hide();
+          $("#sandythree-body").show('slow');
+        });
+
+        $("#sandyfour").click(function(){
+          $('.emails').hide();
+          $("#sandyfour-body").show('slow');
         });
       });
     </script>
