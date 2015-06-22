@@ -53,6 +53,48 @@ var glucoseTotal = $("#glucoseTotal").get(0).getContext("2d");
 //This will get the first returned node in the jQuery collection.
 var myLineChart = new Chart(glucoseTotal).Line(weeklyGlucoseTotals, chartOptions);
 
+
+// Line Chart for run totals
+var weeklyGlucoseCarbs = {
+      labels : ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+      datasets : [
+        {
+          fillColor : "rgba(92,219,213,.30)",
+          // pointDot : false,
+          data : [120,120,120,120,120,120,120]
+        },
+        {
+          fillColor : "rgba(24,161,154,0.64)",
+          strokeColor : "rgba(24,161,154,1)",
+          pointColor : "rgba(24,161,154,1)",
+          pointStrokeColor : "#fff",
+          data : [88,103,129,112,120,91,97]
+        }
+      ]
+    }
+    var chartOptions = {
+      scaleGridLineColor : "rgba(113,101,93,.1)",
+      scaleShowVerticalLines: false,
+      pointDo : true,
+      scaleFontFamily: "'Lato', Helvetica Neue', 'Helvetica', 'Arial', sans-serif",
+      scaleFontStyle: "300",
+      scaleFontColor: "#71655D",
+    }
+
+window.onload = function() {
+    var ctx = document.getElementById("canvas").getContext("2d");
+    window.myLine = new Chart(ctx).Line(weeklyGlucoseCarbs, {
+        responsive: true
+    });
+}
+
+var glucoseCarbs = $("#glucoseCarbs").get(0).getContext("2d");
+//This will get the first returned node in the jQuery collection.
+var myLineChart = new Chart(glucoseCarbs).Line(weeklyGlucoseCarbs, chartOptions);
+
+
+
+
 var dailyExerciseGoal = [
   {
     value: 10,
