@@ -36,15 +36,16 @@
       </div>
     </div>
     <div class="row">
+      
+      <!-- my messages nav -->
       <div class="small-12 columns">
         <div class "row">
-          <div class="small-2 columns left-column">
+          <div class="small-2 columns no-padding">
             <h1 class="top-header">My Messages</h1>
           </div>
           <div class="small-10 columns">
             <ul class="messages">
-              <li><a href="#" class="messages-button">Compose Message</a></li>
-              <li><a href="#" class="messages-button">View</a></li>
+              <li><a href="#" class="tiny button radius">Compose Message</a></li>
               <button href="#" data-dropdown="drop1" aria-controls="drop1" aria-expanded="false" class="button dropdown tiny radius">View</button><br>
                 <ul id="drop1" data-dropdown-content class="f-dropdown" aria-hidden="true">
                   <li><a href="#">Unread Only</a></li>
@@ -57,33 +58,79 @@
           </div>
         </div>
       </div>
-      <div class="small-12 columns lef-column">
-        <div class="panel">
-          <table>
-            <tbody>
-              <tr>
-                <td>SandyRN</td>
-                <td>RE: High morning glucose</td>
-                <td>April 14</td>
-              </tr>
-              <tr>
-                <td>SandyRN</td>
-                <td>Great progress!</td>
-                <td>April 2</td>
-              </tr>
-              <tr>
-                <td>SandyRN</td>
-                <td>Lab Results</td>
-                <td>Jan 20</td>
-              </tr>
-              <tr>
-                <td>SandyRN</td>
-                <td>Lab Reminder</td>
-                <td>Jan 18</td>
-              </tr>
-            </tbody>
-          </table>
-          <ul class="tabs vertical" data-tab>
+
+      <!-- actual message list -->
+      <div class="small-12 columns">
+        <div class="row">
+          <div class="small-6 columns">
+            <div class="panel">
+              <table class="messages-panel">
+                <tbody>
+                  <tr id="sandyone">
+                    <td><img src="http://i.imgur.com/Kxyj1lk.png" class="care-team"/></td>
+                    <td>SandyRN</td>
+                    <td>RE: High morning glucose</td>
+                    <td>April 14</td>
+                  </tr>
+                  <tr id="sandytwo">
+                    <td><img src="http://i.imgur.com/Kxyj1lk.png" class="care-team"/></td>
+                    <td>SandyRN</td>
+                    <td>Great progress!</td>
+                    <td>April 2</td>
+                  </tr>
+                  <tr id="sandythree">
+                    <td><img src="http://i.imgur.com/Kxyj1lk.png" class="care-team"/></td>
+                    <td>SandyRN</td>
+                    <td>Lab Results</td>
+                    <td>Jan 20</td>
+                  </tr>
+                  <tr id="sandyfour">
+                    <td><img src="http://i.imgur.com/Kxyj1lk.png" class="care-team"/></td>
+                    <td>SandyRN</td>
+                    <td>Lab Reminder</td>
+                    <td>Jan 18</td>
+                  </tr>
+                  <tr id="melissaone">
+                    <td><img class="care-team" src="http://i.imgur.com/qU7961K.png"/></td>
+                    <td>Dr. Melissa Lee</td>
+                    <td>Blood Test Results</td>
+                    <td>Dec 12</td>
+                  <tr id="sandyfive">
+                    <td><img src="http://i.imgur.com/Kxyj1lk.png" class="care-team"/></td>
+                    <td>SandyRN</td>
+                    <td>Lab Reminder</td>
+                    <td>Oct 13</td>
+                  </tr>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="small-6 columns">
+            <div class="message-body">
+              <div class="emails" id="sandyone-body">
+                <h3>This is test content.</h3>
+                <p>dfhjgsdjhfsdghj sdjfgjsd gjhsdhdg jhsdgf jhsdgf sdjfhg sjgj</p>
+              </div>
+              <div class="emails" id="sandytwo-body">
+                <h3>This is test moar test content.</h3>
+                <p>dfhjgsdjhfsdghj sdjfgjsd gjhsdhdg jhsdgf jhsdgf sdjfhg sjgj</p>
+              </div>
+              <div class="emails" id="sandythree-body">
+                <h3>Mary is Awesome.</h3>
+                <p>dfhjgsdjhfsdghj sdjfgjsd gjhsdhdg jhsdgf jhsdgf sdjfhg sjgj</p>
+              </div>
+              <div class="emails" id="sandyfour-body">
+                <h3>Chris is exhausted.</h3>
+                <p>dfhjgsdjhfsdghj sdjfgjsd gjhsdhdg jhsdgf jhsdgf sdjfhg sjgj</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+          <!-- mail tab approach -->
+<!--           <ul class="tabs vertical" data-tab>
             <li class="tab-title active"><a href="#panel11">
               <ul class="messages-preview">
                 <li><a href="">SandyRN</a></li>
@@ -114,7 +161,7 @@
             <div class="content" id="panel41">
               <p>This is the fourth panel of the basic tab example. This is the fourth panel of the basic tab example.</p>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     <footer class="row">
@@ -126,5 +173,27 @@
     <script src="bower_components/foundation/js/foundation.min.js"></script>
     <script src="js/chart.js"></script>
     <script src="js/app.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $('.emails').hide();
+        $("#sandyone").click(function(){
+          $('.emails').hide();
+          $("#sandyone-body").show('slow');
+        });
+        $("#sandytwo").click(function(){
+          $('.emails').hide();
+          $("#sandytwo-body").show('slow');
+        });
+        $("#sandythree").click(function(){
+          $('.emails').hide();
+          $("#sandythree-body").show('slow');
+        });
+        $("#sandyfour").click(function(){
+          $('.emails').hide();
+          $("#sandyfour-body").show('slow');
+        });
+      });
+    </script>
   </body>
 </html>

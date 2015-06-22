@@ -8,26 +8,30 @@ $main-typeface: 'Lato', 'Helvetica', 'Sans Serif';
   width: 80%;
 }
 
+.barback, .setrange {
+  height: 15px;
+}
+
+.setrange, .target {
+  border-radius: 12px;
+}
+
 .barback {
   background-color: #5CDBD5;
   margin-top: 15px;
   margin-bottom: 15px;
-  height: 15px;
   width: 100%;
   border-radius: 10px;
 }
 
 .setrange {
   background-color: #18A19A;
-  border-radius: 12px;
-  height: 15px;
   margin-left: 22%;
   width: 47%;
 }
 
 .target {
   background-color: #EE5876;
-  border-radius: 12px;
   height: 24px;
   margin-left: 33%;
   margin-top: -20px;
@@ -409,14 +413,14 @@ footer {
 
 /*BUTTONS*/
 
-a.tiny.button, a.small.button.radius {
+a.tiny.button, a.small.button.radius, .dropdown.button.tiny, button.dropdown.tiny {
   background-color: $primary-color;
   color: #fff;
   font-family: $main-typeface;
   font-weight: 300;
 }
 
-a.tiny.button:hover, a.small.button:hover {
+a.tiny.button:hover, a.small.button:hover, .dropdown.button.tiny:hover {
   background-color: $secondary-color;
   color: #fff;
 }
@@ -508,7 +512,7 @@ a.care-team-button {
 
 /*TABLE*/
 
-table.messages-preview, table.appts {
+table.messages-preview, table.appts, table.messages-panel {
   border-collapse: collapse;
   border-style: hidden;
   width: 100%;
@@ -550,15 +554,15 @@ table.meal-log {
     }
 }
 
-table.appts tbody tr.even, table.appts tbody tr.alt, table.messages-preview tbody tr.even, table.meal-log tbody tr.alt  {
+table.appts tbody tr.even, table.appts tbody tr.alt, table.messages-preview tbody tr.even, table.meal-log tbody tr.alt, table.messages-panel tbody tr.alt  {
   background: #FFF
 }
 
-table.appts tbody tr:nth-child(even), table.messages-preview tbody tr:nth-child(even), table.meal-log tbody tr:nth-child(even)  { 
+table.appts tbody tr:nth-child(even), table.messages-preview tbody tr:nth-child(even), table.meal-log tbody tr:nth-child(even), table.messages-panel tbody tr:nth-child(even)   { 
   background: #FFF; 
 }
 
-table.messages-preview tr td {
+table.messages-preview tr td, table.messages-panel tr td {
   padding-top: .8rem;
   padding-right: 2.7rem;
   padding-bottom: .8rem;
@@ -576,6 +580,9 @@ table.messages-preview tr td {
   }
 }
 
+.messages-panel {
+  height: 400px;
+}
 
 .accordion .accordion-navigation > a, .accordion dd > a {
   font-family: $main-typeface;
@@ -601,23 +608,6 @@ select, input[type="text"], input[type="checkbox"] + label, input[type="radio"] 
   color: #71655D;
 }
 
-/*TABS*/
-
-.tabs.vertical {
-  width: 50%;
-  max-width: 50%;
-}
-
-.tabs .tab-title > a {
-  font-family: $main-typeface; 
-  font-weight: 300; 
-  color: $type-color;
-  font-size: .8rem;
-}
-
-$tabs-navigation-font-family: $main-typeface;
-$tabs-vertical-navigation-margin-bottom: 1.25rem;
-
 canvas {
   width: 100% !important;
   height: auto !important;
@@ -628,5 +618,12 @@ canvas {
   font: .5em $main-typeface;
   border-color: #71655D;
   border-radius: 3px;
+}
+
+.f-dropdown {
+  font-family: $main-typeface;
+  font-weight: 300; 
+  color: $type-color;
+  font-size: .8rem;
 }
 
